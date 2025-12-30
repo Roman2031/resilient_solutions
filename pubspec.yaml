@@ -1,0 +1,131 @@
+name: kindomcall
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core & UI
+  cupertino_icons: ^1.0.8
+  flutter_screenutil: ^5.9.3
+  gap: ^3.0.1
+  flutter_svg: ^2.2.1
+  dotted_border: ^3.1.0
+
+  shimmer: ^3.0.0
+
+  # Networking & API
+  dio: ^5.9.0
+  pretty_dio_logger: ^1.4.0
+  connectivity_plus: ^7.0.0
+  http_certificate_pinning: ^3.0.1
+
+  # Local Storage & State Management
+  hive_flutter: ^1.1.0
+  flutter_secure_storage: ^9.2.4
+  riverpod_annotation: ^3.0.0
+  flutter_riverpod: ^3.0.0
+  sqflite: ^2.4.1
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  
+  # Serialization & Code Generation
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+
+  # Forms & Validation
+  flutter_form_builder: ^10.2.0
+  form_builder_validators: ^11.2.0
+  pinput: ^6.0.1
+
+  # Images & Files
+  cached_network_image: ^3.4.1
+  image_picker: ^1.2.0
+  open_file: ^3.5.10
+
+  # Routing & Linking
+  go_router: ^17.0.1
+  url_launcher: ^6.3.2
+  app_settings: ^7.0.0
+
+  # Firebase & Analytics
+  firebase_core: ^4.3.0
+  firebase_analytics: ^12.1.0
+  firebase_crashlytics: ^5.0.6
+  firebase_performance: ^0.11.1+3
+  firebase_messaging: ^16.1.0
+  firebase_remote_config: ^6.1.3
+  flutter_local_notifications: ^19.5.0
+
+  # Authentication & Social Login
+  firebase_auth: ^6.0.2
+  google_sign_in: ^7.1.1
+  flutter_facebook_auth: ^7.1.2
+  sign_in_with_apple: ^7.0.1
+  
+  # Keycloak OIDC Authentication
+  flutter_appauth: ^11.0.0
+  app_links: ^6.4.1
+  jwt_decoder: ^2.0.1
+
+  # Utilities & Misc
+  intl_utils: ^2.8.11
+  permission_handler: ^12.0.1
+  carousel_slider: ^5.1.1
+  intl: ^0.20.2
+  flutter_staggered_animations: ^1.1.1
+  flutter_inner_shadow: ^0.0.1
+  flutter_animate: ^4.5.2
+  persistent_bottom_nav_bar: ^6.2.1
+  shared_preferences: ^2.5.3
+  logger: ^2.5.0
+  dio_cache_interceptor: ^4.0.5
+  
+  # Video & Media
+  video_player: ^2.9.2
+  flutter_html: ^3.0.0-beta.2
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting
+  flutter_lints: ^6.0.0
+  custom_lint: ^0.8.0
+
+  # Linting for Riverpod
+  riverpod_lint: ^3.0.0
+
+  # Code Generation
+  build_runner: ^2.7.1
+  riverpod_generator: ^3.0.0
+  freezed: ^3.2.3
+  json_serializable: ^6.8.0
+
+  # generates code for assets, fonts, and other
+  flutter_gen_runner: ^5.11.0
+
+flutter_gen:
+  output: lib/gen/
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/svgs/
+    - assets/pngs/
+
+  fonts:
+    - family: JosefinSans
+      fonts:
+        - asset: assets/fonts/JosefinSans-Bold.ttf
+        - asset: assets/fonts/JosefinSans-Light.ttf
+        - asset: assets/fonts/JosefinSans-Medium.ttf

@@ -1,0 +1,581 @@
+Analyzing features...                                           
+
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\Donate\views\donate_screen.dart:106:31 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\Donate\views\donate_screen.dart:118:31 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\Donate\views\donate_screen.dart:139:31 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\Donate\views\donate_screen.dart:149:31 - deprecated_member_use
+  error - Undefined class 'MyActionsRef' - lib\features\actions\providers\actions_provider.dart:10:36 - undefined_class
+  error - Undefined class 'FilteredActionsRef' - lib\features\actions\providers\actions_provider.dart:45:3 - undefined_class
+  error - Undefined class 'SearchActionsRef' - lib\features\actions\providers\actions_provider.dart:60:3 - undefined_class
+warning - Unnecessary cast - lib\features\actions\providers\actions_provider.dart:116:27 - unnecessary_cast
+warning - Unnecessary cast - lib\features\actions\providers\actions_provider.dart:153:27 - unnecessary_cast
+  error - Undefined name 'actionActionsNotifierProvider' - lib\features\actions\views\my_actions_screen.dart:74:19 - undefined_identifier
+  error - Undefined name 'actionActionsNotifierProvider' - lib\features\actions\views\my_actions_screen.dart:100:17 - undefined_identifier
+  error - Undefined name 'actionActionsNotifierProvider' - lib\features\actions\views\my_actions_screen.dart:130:24 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\actions\widgets\action_item_card.dart:127:52 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\actions\widgets\edit_action_dialog.dart:159:19 - deprecated_member_use
+  error - Missing concrete implementations of 'getter mixin _$AdminUser on Object.avatar', 'getter mixin _$AdminUser on Object.createdAt', 'getter mixin _$AdminUser on Object.email', 'getter mixin _$AdminUser on Object.emailVerifiedAt', and 7 more - lib\features\admin_portal\data\models\admin_models.dart:8:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:13:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:17:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:18:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:19:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$AdminCircle on Object.courseId', 'getter mixin _$AdminCircle on Object.createdAt', 'getter mixin _$AdminCircle on Object.description', 'getter mixin _$AdminCircle on Object.endDate', and 10 more - lib\features\admin_portal\data\models\admin_models.dart:28:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:33:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:34:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:35:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:36:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:37:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:39:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:40:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:41:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:42:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$AdminDashboardStats on Object.activeCircles', 'getter mixin _$AdminDashboardStats on Object.activeUsers', 'getter mixin _$AdminDashboardStats on Object.storageStats', 'getter mixin _$AdminDashboardStats on Object.systemHealth', and 7 more - lib\features\admin_portal\data\models\admin_models.dart:51:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:53:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:54:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:55:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:56:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:57:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:58:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:59:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:60:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:61:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:62:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$UserGrowth on Object.growthPercentage', 'getter mixin _$UserGrowth on Object.newUsersThisMonth', 'getter mixin _$UserGrowth on Object.newUsersThisWeek', 'getter mixin _$UserGrowth on Object.newUsersToday', and 1 more - lib\features\admin_portal\data\models\admin_models.dart:71:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:73:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:74:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:75:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:76:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$SystemHealth on Object.cpuUsage', 'getter mixin _$SystemHealth on Object.diskUsage', 'getter mixin _$SystemHealth on Object.errorCount', 'getter mixin _$SystemHealth on Object.lastChecked', and 3 more - lib\features\admin_portal\data\models\admin_models.dart:85:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:88:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:89:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:90:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:91:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:92:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$StorageStats on Object.storageUnit', 'getter mixin _$StorageStats on Object.totalStorage', 'getter mixin _$StorageStats on Object.usedStorage', and 'mixin _$StorageStats on Object.toJson' - lib\features\admin_portal\data\models\admin_models.dart:101:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:103:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:104:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:105:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$AdminUserDetails on Object.avatar', 'getter mixin _$AdminUserDetails on Object.circlesCount', 'getter mixin _$AdminUserDetails on Object.coursesEnrolled', 'getter mixin _$AdminUserDetails on Object.createdAt', and 10 more - lib\features\admin_portal\data\models\admin_models.dart:114:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:122:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:123:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:124:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:125:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:126:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:127:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:128:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$LoginHistory on Object.deviceInfo', 'getter mixin _$LoginHistory on Object.id', 'getter mixin _$LoginHistory on Object.ipAddress', 'getter mixin _$LoginHistory on Object.loggedInAt', and 1 more - lib\features\admin_portal\data\models\admin_models.dart:137:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:140:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:141:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:142:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$ActivityLog on Object.action', 'getter mixin _$ActivityLog on Object.createdAt', 'getter mixin _$ActivityLog on Object.description', 'getter mixin _$ActivityLog on Object.id', and 1 more - lib\features\admin_portal\data\models\admin_models.dart:151:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:156:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$PaginatedUsers on Object.page', 'getter mixin _$PaginatedUsers on Object.perPage', 'getter mixin _$PaginatedUsers on Object.total', 'getter mixin _$PaginatedUsers on Object.totalPages', and 2 more - lib\features\admin_portal\data\models\admin_models.dart:165:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:170:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:171:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$AdminActivity on Object.activityType', 'getter mixin _$AdminActivity on Object.createdAt', 'getter mixin _$AdminActivity on Object.description', 'getter mixin _$AdminActivity on Object.id', and 3 more - lib\features\admin_portal\data\models\admin_models.dart:180:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:183:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:185:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:186:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:187:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$AuditLog on Object.action', 'getter mixin _$AuditLog on Object.after', 'getter mixin _$AuditLog on Object.before', 'getter mixin _$AuditLog on Object.deviceInfo', and 7 more - lib\features\admin_portal\data\models\admin_models.dart:196:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:200:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:201:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:202:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:206:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\admin_models.dart:207:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$UserAnalytics on Object.activeUsers', 'getter mixin _$UserAnalytics on Object.retentionRate', 'getter mixin _$UserAnalytics on Object.totalUsers', 'getter mixin _$UserAnalytics on Object.userGrowth', and 3 more - lib\features\admin_portal\data\models\analytics_models.dart:8:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:10:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:11:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:12:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:13:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:14:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:15:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$DataPoint on Object.date', 'getter mixin _$DataPoint on Object.value', and 'mixin _$DataPoint on Object.toJson' - lib\features\admin_portal\data\models\analytics_models.dart:24:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$CircleAnalytics on Object.activeCircles', 'getter mixin _$CircleAnalytics on Object.averageMembers', 'getter mixin _$CircleAnalytics on Object.circleCreationTrend', 'getter mixin _$CircleAnalytics on Object.circlesByCategory', and 2 more - lib\features\admin_portal\data\models\analytics_models.dart:36:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:38:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:39:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:40:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:41:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:42:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$LearningAnalytics on Object.averageCompletionRate', 'getter mixin _$LearningAnalytics on Object.certificatesIssued', 'getter mixin _$LearningAnalytics on Object.popularCourses', 'getter mixin _$LearningAnalytics on Object.quizScoreDistribution', and 2 more - lib\features\admin_portal\data\models\analytics_models.dart:51:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:53:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:54:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:55:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:56:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:57:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$PopularCourse on Object.completionRate', 'getter mixin _$PopularCourse on Object.enrollmentCount', 'getter mixin _$PopularCourse on Object.id', 'getter mixin _$PopularCourse on Object.name', and 1 more - lib\features\admin_portal\data\models\analytics_models.dart:66:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:70:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:71:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$CallAnalytics on Object.averageAttendance', 'getter mixin _$CallAnalytics on Object.callsTrend', 'getter mixin _$CallAnalytics on Object.completedCalls', 'getter mixin _$CallAnalytics on Object.completionRate', and 2 more - lib\features\admin_portal\data\models\analytics_models.dart:80:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:82:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:83:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:84:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:85:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:86:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$EngagementAnalytics on Object.actionsCompleted', 'getter mixin _$EngagementAnalytics on Object.engagementTrend', 'getter mixin _$EngagementAnalytics on Object.messagesCount', 'getter mixin _$EngagementAnalytics on Object.notesCount', and 1 more - lib\features\admin_portal\data\models\analytics_models.dart:95:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:97:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:98:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:99:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:100:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$FlaggedContent on Object.content', 'getter mixin _$FlaggedContent on Object.contentId', 'getter mixin _$FlaggedContent on Object.contentType', 'getter mixin _$FlaggedContent on Object.createdAt', and 6 more - lib\features\admin_portal\data\models\analytics_models.dart:109:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:112:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:113:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:116:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:117:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:119:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$SystemSettings on Object.defaultLanguage', 'getter mixin _$SystemSettings on Object.emailVerificationRequired', 'getter mixin _$SystemSettings on Object.maxCircleMembers', 'getter mixin _$SystemSettings on Object.maxFileSize', and 5 more - lib\features\admin_portal\data\models\analytics_models.dart:128:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:130:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:131:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:133:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:134:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:135:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:136:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\admin_portal\data\models\analytics_models.dart:137:6 - invalid_annotation_target
+  error - Undefined class 'AdminPortalRepositoryRef' - lib\features\admin_portal\data\repositories\admin_portal_repository.dart:13:45 - undefined_class
+  error - Undefined class 'AdminDashboardStatsRef' - lib\features\admin_portal\providers\admin_dashboard_provider.dart:10:49 - undefined_class
+  error - Undefined class 'RecentActivityRef' - lib\features\admin_portal\providers\admin_dashboard_provider.dart:24:3 - undefined_class
+  error - Undefined class 'SystemHealthRef' - lib\features\admin_portal\providers\admin_dashboard_provider.dart:39:35 - undefined_class
+  error - Undefined class 'UserAnalyticsRef' - lib\features\admin_portal\providers\analytics_provider.dart:11:3 - undefined_class
+  error - Undefined class 'CircleAnalyticsRef' - lib\features\admin_portal\providers\analytics_provider.dart:30:41 - undefined_class
+  error - Undefined class 'LearningAnalyticsRef' - lib\features\admin_portal\providers\analytics_provider.dart:43:45 - undefined_class
+  error - Undefined class 'CallAnalyticsRef' - lib\features\admin_portal\providers\analytics_provider.dart:56:37 - undefined_class
+  error - Undefined class 'EngagementAnalyticsRef' - lib\features\admin_portal\providers\analytics_provider.dart:69:49 - undefined_class
+  error - Undefined class 'FlaggedContentRef' - lib\features\admin_portal\providers\moderation_provider.dart:12:3 - undefined_class
+  error - Undefined class 'ModerationHistoryRef' - lib\features\admin_portal\providers\moderation_provider.dart:31:42 - undefined_class
+  error - Undefined class 'AllUsersRef' - lib\features\admin_portal\providers\user_management_provider.dart:11:3 - undefined_class
+  error - Undefined class 'UserDetailsRef' - lib\features\admin_portal\providers\user_management_provider.dart:36:3 - undefined_class
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\admin_portal\views\system_settings_screen.dart:120:7 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\admin_portal\views\user_management_screen.dart:325:34 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\admin_portal\views\user_management_screen.dart:349:34 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin_portal\widgets\activity_feed_item.dart:29:65 - deprecated_member_use
+   info - The private field _isLoading could be 'final' - lib\features\admin_portal\widgets\admin_confirmation_dialog.dart:34:8 - prefer_final_fields
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin_portal\widgets\admin_user_card.dart:166:22 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin_portal\widgets\admin_user_card.dart:193:22 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin_portal\widgets\permission_matrix.dart:98:78 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin_portal\widgets\stat_card.dart:55:44 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin_portal\widgets\stat_card.dart:56:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin_portal\widgets\system_health_indicator.dart:42:34 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin_portal\widgets\system_health_indicator.dart:81:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\admin_portal\widgets\system_health_indicator.dart:83:56 - deprecated_member_use
+  error - Undefined class 'AllNotesRef' - lib\features\allnotes\providers\notes_providers.dart:11:29 - undefined_class
+   info - Don't invoke 'print' in production code - lib\features\allnotes\providers\notes_providers.dart:33:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\allnotes\providers\notes_providers.dart:37:7 - avoid_print
+warning - Unnecessary cast - lib\features\allnotes\providers\notes_providers.dart:79:25 - unnecessary_cast
+warning - Unnecessary cast - lib\features\allnotes\providers\notes_providers.dart:110:25 - unnecessary_cast
+  error - Undefined class 'NotesByCallRef' - lib\features\allnotes\providers\notes_providers.dart:133:32 - undefined_class
+  error - Undefined class 'SearchNotesRef' - lib\features\allnotes\providers\notes_providers.dart:147:32 - undefined_class
+  error - Undefined name 'noteActionsNotifierProvider' - lib\features\allnotes\views\all_notes_screen.dart:56:19 - undefined_identifier
+  error - Undefined name 'noteActionsNotifierProvider' - lib\features\allnotes\views\all_notes_screen.dart:87:24 - undefined_identifier
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\allnotes\widgets\create_note_dialog.dart:143:25 - deprecated_member_use
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\allnotes\widgets\edit_note_dialog.dart:151:25 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\allnotes\widgets\note_card.dart:49:56 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\views\keycloak_login_screen.dart:180:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\views\keycloak_login_screen.dart:183:53 - deprecated_member_use
+  error - Missing concrete implementations of 'getter mixin _$UserProfile on Object.avatar', 'getter mixin _$UserProfile on Object.createdAt', 'getter mixin _$UserProfile on Object.email', 'getter mixin _$UserProfile on Object.id', and 4 more - lib\features\call_service\data\models\call_service_models.dart:8:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:13:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:15:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:16:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$Circle on Object.courseId', 'getter mixin _$Circle on Object.createdAt', 'getter mixin _$Circle on Object.description', 'getter mixin _$Circle on Object.endDate', and 10 more - lib\features\call_service\data\models\call_service_models.dart:25:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:30:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:31:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:32:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:33:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:35:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:36:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:37:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:38:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:39:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$CircleMember on Object.circleId', 'getter mixin _$CircleMember on Object.createdAt', 'getter mixin _$CircleMember on Object.id', 'getter mixin _$CircleMember on Object.joinedAt', and 6 more - lib\features\call_service\data\models\call_service_models.dart:48:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:51:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:52:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:53:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:54:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:57:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:58:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$Call on Object.agenda', 'getter mixin _$Call on Object.circleId', 'getter mixin _$Call on Object.createdAt', 'getter mixin _$Call on Object.description', and 8 more - lib\features\call_service\data\models\call_service_models.dart:67:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:70:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:73:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:74:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:76:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:78:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:79:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$Note on Object.callId', 'getter mixin _$Note on Object.content', 'getter mixin _$Note on Object.createdAt', 'getter mixin _$Note on Object.id', and 4 more - lib\features\call_service\data\models\call_service_models.dart:87:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:90:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:91:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:93:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:94:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:95:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$ActionItem on Object.assignedTo', 'getter mixin _$ActionItem on Object.callId', 'getter mixin _$ActionItem on Object.circleId', 'getter mixin _$ActionItem on Object.createdAt', and 8 more - lib\features\call_service\data\models\call_service_models.dart:103:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:106:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:107:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:108:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:111:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:114:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:115:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$Reminder on Object.createdAt', 'getter mixin _$Reminder on Object.id', 'getter mixin _$Reminder on Object.isSent', 'getter mixin _$Reminder on Object.message', and 6 more - lib\features\call_service\data\models\call_service_models.dart:124:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:127:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:128:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:129:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:132:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:133:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:134:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$Device on Object.createdAt', 'getter mixin _$Device on Object.deviceName', 'getter mixin _$Device on Object.deviceToken', 'getter mixin _$Device on Object.deviceType', and 4 more - lib\features\call_service\data\models\call_service_models.dart:143:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:146:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:147:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:148:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:149:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:150:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:151:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$UpcomingCall on Object.circleId', 'getter mixin _$UpcomingCall on Object.circleName', 'getter mixin _$UpcomingCall on Object.durationMinutes', 'getter mixin _$UpcomingCall on Object.id', and 4 more - lib\features\call_service\data\models\call_service_models.dart:160:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:163:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:164:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:166:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:167:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\call_service\data\models\call_service_models.dart:168:6 - invalid_annotation_target
+  error - Undefined class 'CallServiceRepositoryRef' - lib\features\call_service\data\repositories\call_service_repository.dart:12:45 - undefined_class
+  error - Undefined name 'json' - lib\features\call_service\data\repositories\call_service_repository.dart:578:37 - undefined_identifier
+  error - Missing concrete implementations of 'getter mixin _$CallCircle on Object.courseId', 'getter mixin _$CallCircle on Object.createdAt', 'getter mixin _$CallCircle on Object.currentMembersCount', 'getter mixin _$CallCircle on Object.description', and 11 more - lib\features\callcircle\data\models\call_circle.dart:9:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:14:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:15:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:16:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:17:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:19:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:20:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:21:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:22:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:23:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:24:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$CallCircleSession on Object.agenda', 'getter mixin _$CallCircleSession on Object.attendanceCount', 'getter mixin _$CallCircleSession on Object.callCircleId', 'getter mixin _$CallCircleSession on Object.createdAt', and 10 more - lib\features\callcircle\data\models\call_circle.dart:33:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:36:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:39:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:40:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:42:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:45:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:46:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:47:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$CallCircleMember on Object.callCircleId', 'getter mixin _$CallCircleMember on Object.id', 'getter mixin _$CallCircleMember on Object.joinedAt', 'getter mixin _$CallCircleMember on Object.role', and 6 more - lib\features\callcircle\data\models\call_circle.dart:56:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:59:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:60:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:61:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:62:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:63:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:66:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$Attendance on Object.id', 'getter mixin _$Attendance on Object.joinedAt', 'getter mixin _$Attendance on Object.leftAt', 'getter mixin _$Attendance on Object.notes', and 4 more - lib\features\callcircle\data\models\call_circle.dart:75:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:78:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:79:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:81:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\callcircle\data\models\call_circle.dart:82:6 - invalid_annotation_target
+  error - Undefined class 'CallCircleRepositoryRef' - lib\features\callcircle\data\repositories\call_circle_repository.dart:12:43 - undefined_class
+  error - Missing concrete implementations of 'getter mixin _$CircleDetails on Object.activeActions', 'getter mixin _$CircleDetails on Object.circle', 'getter mixin _$CircleDetails on Object.members', 'getter mixin _$CircleDetails on Object.pastCalls', and 3 more - lib\features\callcircle\models\circle_details.dart:9:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$CallDetails on Object.actions', 'getter mixin _$CallDetails on Object.call', 'getter mixin _$CallDetails on Object.notes', 'getter mixin _$CallDetails on Object.participants', and 1 more - lib\features\callcircle\models\circle_details.dart:25:7 - non_abstract_class_inherits_abstract_member
+  error - The name 'call' is already defined - lib\features\callcircle\models\circle_details.freezed.dart:381:25 - duplicate_definition
+  error - Class '_$CallDetailsCopyWithImpl' can't define method 'call' and have field '$CallDetailsCopyWith.call' with the same name - lib\features\callcircle\models\circle_details.freezed.dart:394:44 - conflicting_method_and_field
+  error - The expression doesn't evaluate to a function, so it can't be invoked - lib\features\callcircle\models\circle_details.freezed.dart:395:16 - invocation_of_non_function_expression
+  error - The name 'call' is already defined - lib\features\callcircle\models\circle_details.freezed.dart:407:25 - duplicate_definition
+  error - The expression doesn't evaluate to a function, so it can't be invoked - lib\features\callcircle\models\circle_details.freezed.dart:410:18 - invocation_of_non_function_expression
+  error - Class '_$CallDetailsCopyWith' can't define method 'call' and have field '$CallDetailsCopyWith.call' with the same name - lib\features\callcircle\models\circle_details.freezed.dart:608:6 - conflicting_method_and_field
+  error - The name 'call' is already defined - lib\features\callcircle\models\circle_details.freezed.dart:613:35 - duplicate_definition
+  error - Class '__$CallDetailsCopyWithImpl' can't define method 'call' and have field '_$CallDetailsCopyWith.call' with the same name - lib\features\callcircle\models\circle_details.freezed.dart:626:44 - conflicting_method_and_field
+  error - The name 'call' is already defined - lib\features\callcircle\models\circle_details.freezed.dart:640:25 - duplicate_definition
+  error - The expression doesn't evaluate to a function, so it can't be invoked - lib\features\callcircle\models\circle_details.freezed.dart:643:18 - invocation_of_non_function_expression
+   info - The member 'update' overrides an inherited member but isn't annotated with '@override' - lib\features\callcircle\providers\call_circle_provider.dart:47:16 - annotate_overrides
+  error - 'CallCircleDetail.update' ('Future<void> Function({String? description, int? maxMembers, String? meetingLink, String? meetingSchedule, String? name, String? status})') isn't a valid override of '$AsyncClassModifier.update' ('Future<CallCircle> Function(FutureOr<CallCircle> Function(CallCircle), {FutureOr<CallCircle> Function(Object, StackTrace)? onError})') - lib\features\callcircle\providers\call_circle_provider.dart:47:16 - invalid_override
+  error - Undefined class 'CircleDetailsRef' - lib\features\callcircle\providers\circle_details_provider.dart:12:3 - undefined_class
+  error - Undefined class 'CallDetailsRef' - lib\features\callcircle\providers\circle_details_provider.dart:56:33 - undefined_class
+  error - Undefined class 'MyCirclesRef' - lib\features\callcircle\providers\circles_provider.dart:10:32 - undefined_class
+  error - Undefined class 'CircleRef' - lib\features\callcircle\providers\circles_provider.dart:22:23 - undefined_class
+  error - Undefined class 'CircleMembersRef' - lib\features\callcircle\providers\circles_provider.dart:35:3 - undefined_class
+  error - Undefined class 'CircleCallsRef' - lib\features\callcircle\providers\circles_provider.dart:49:32 - undefined_class
+   info - An uninitialized field should have an explicit type annotation - lib\features\callcircle\views\circle_details_screen.dart:65:9 - prefer_typing_uninitialized_variables
+   info - Missing type annotation - lib\features\callcircle\views\circle_details_screen.dart:65:9 - strict_top_level_inference
+   info - An uninitialized field should have an explicit type annotation - lib\features\callcircle\views\circle_details_screen.dart:196:9 - prefer_typing_uninitialized_variables
+   info - Missing type annotation - lib\features\callcircle\views\circle_details_screen.dart:196:9 - strict_top_level_inference
+   info - Unnecessary use of multiple underscores - lib\features\callcircle\views\circle_details_screen.dart:214:29 - unnecessary_underscores
+   info - An uninitialized field should have an explicit type annotation - lib\features\callcircle\views\circle_details_screen.dart:224:9 - prefer_typing_uninitialized_variables
+   info - Missing type annotation - lib\features\callcircle\views\circle_details_screen.dart:224:9 - strict_top_level_inference
+warning - The value of 'refresh' should be used - lib\features\callcircle\views\my_circles_screen.dart:106:31 - unused_result
+   info - Unnecessary use of multiple underscores - lib\features\callcircle\views\my_circles_screen.dart:111:43 - unnecessary_underscores
+  error - Undefined class 'ManagedCirclesRef' - lib\features\callcirclemanager\providers\circle_management_provider.dart:11:37 - undefined_class
+   info - Unnecessary use of multiple underscores - lib\features\callcirclemanager\providers\circle_management_provider.dart:17:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\callcirclemanager\providers\circle_management_provider.dart:38:16 - unnecessary_underscores
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\callcirclemanager\views\callcirclemanager.dart:87:50 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\callcirclemanager\views\callcirclemanager.dart:205:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\callcirclemanager\views\callcirclemanager.dart:207:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\callcirclemanager\views\callcirclemanager.dart:209:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\callcirclemanager\views\callcirclemanager.dart:211:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\callcirclemanager\views\callcirclemanager.dart:213:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\callcirclemanager\views\callcirclemanager.dart:215:54 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\callcirclemanager\views\callcirclemanager.dart:310:52 - deprecated_member_use
+  error - Missing concrete implementations of 'getter mixin _$CallRecurrence on Object.endDate', 'getter mixin _$CallRecurrence on Object.occurrences', 'getter mixin _$CallRecurrence on Object.type', and 'mixin _$CallRecurrence on Object.toJson' - lib\features\callscheduler\models\call_recurrence.dart:37:7 - non_abstract_class_inherits_abstract_member
+  error - Undefined class 'CalendarCallsRef' - lib\features\callscheduler\providers\call_scheduler_provider.dart:12:3 - undefined_class
+warning - Unused import: 'package:flutter_riverpod/flutter_riverpod.dart' - lib\features\callscheduler\views\callscheduler.dart:1:8 - unused_import
+   info - Unnecessary use of multiple underscores - lib\features\callscheduler\widgets\calendar_view.dart:122:29 - unnecessary_underscores
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\callscheduler\widgets\schedule_call_form.dart:210:7 - deprecated_member_use
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\callscheduler\widgets\schedule_call_form.dart:269:7 - deprecated_member_use
+  error - Missing concrete implementations of 'getter mixin _$MessageThread on Object.id', 'getter mixin _$MessageThread on Object.isGroupChat', 'getter mixin _$MessageThread on Object.lastMessage', 'getter mixin _$MessageThread on Object.lastMessageAt', and 4 more - lib\features\chat\models\message_thread.dart:9:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\chat\models\message_thread.dart:17:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\chat\models\message_thread.dart:18:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\chat\models\message_thread.dart:19:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$ThreadParticipant on Object.avatarUrl', 'getter mixin _$ThreadParticipant on Object.id', 'getter mixin _$ThreadParticipant on Object.isOnline', 'getter mixin _$ThreadParticipant on Object.lastSeen', and 2 more - lib\features\chat\models\message_thread.dart:38:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\chat\models\message_thread.dart:42:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\chat\models\message_thread.dart:43:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\chat\models\message_thread.dart:44:6 - invalid_annotation_target
+  error - Undefined class 'ActivityFeedRef' - lib\features\chat\providers\activity_provider.dart:11:3 - undefined_class
+  error - Undefined class 'MessageThreadsRef' - lib\features\chat\providers\messages_provider.dart:11:44 - undefined_class
+  error - Undefined class 'ThreadMessagesRef' - lib\features\chat\providers\messages_provider.dart:64:3 - undefined_class
+warning - The value of 'refresh' should be used - lib\features\chat\views\activity_feed_screen.dart:108:31 - unused_result
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\chat\views\activity_feed_screen.dart:357:61 - deprecated_member_use
+warning - The value of 'refresh' should be used - lib\features\chat\views\chats_screen.dart:81:31 - unused_result
+   info - Missing type annotation - lib\features\chat\views\chats_screen.dart:107:20 - strict_top_level_inference
+warning - The value of 'refresh' should be used - lib\features\chat\views\message_thread_screen.dart:47:11 - unused_result
+  error - Missing concrete implementations of 'getter mixin _$Course on Object.authorId', 'getter mixin _$Course on Object.authorName', 'getter mixin _$Course on Object.categories', 'getter mixin _$Course on Object.content', and 17 more - lib\features\courses\data\models\course.dart:9:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:17:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:18:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:20:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:21:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:22:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:23:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:24:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:25:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:26:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:27:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:28:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:29:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:30:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$Lesson on Object.content', 'getter mixin _$Lesson on Object.courseId', 'getter mixin _$Lesson on Object.excerpt', 'getter mixin _$Lesson on Object.featuredMediaUrl', and 8 more - lib\features\courses\data\models\course.dart:39:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:45:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:46:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:47:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:48:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:49:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:50:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:51:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$Topic on Object.content', 'getter mixin _$Topic on Object.courseId', 'getter mixin _$Topic on Object.id', 'getter mixin _$Topic on Object.isCompleted', and 6 more - lib\features\courses\data\models\course.dart:60:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:65:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:66:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:67:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:68:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:69:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:70:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$Quiz on Object.content', 'getter mixin _$Quiz on Object.courseId', 'getter mixin _$Quiz on Object.id', 'getter mixin _$Quiz on Object.isCompleted', and 7 more - lib\features\courses\data\models\course.dart:79:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:84:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:85:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:86:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:87:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:88:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:89:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:90:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$CourseProgress on Object.completedLessons', 'getter mixin _$CourseProgress on Object.completedTopics', 'getter mixin _$CourseProgress on Object.completionDate', 'getter mixin _$CourseProgress on Object.courseId', and 6 more - lib\features\courses\data\models\course.dart:99:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:101:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:102:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:103:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:104:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:105:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:106:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:107:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:108:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\course.dart:109:6 - invalid_annotation_target
+  error - Target of URI hasn't been generated: 'package:kindomcall/features/courses/data/models/quiz_models.g.dart' - lib\features\courses\data\models\quiz_models.dart:6:6 - uri_has_not_been_generated
+  error - Missing concrete implementations of 'getter mixin _$QuizQuestion on Object.correctAnswer', 'getter mixin _$QuizQuestion on Object.explanation', 'getter mixin _$QuizQuestion on Object.id', 'getter mixin _$QuizQuestion on Object.options', and 4 more - lib\features\courses\data\models\quiz_models.dart:10:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\quiz_models.dart:16:6 - invalid_annotation_target
+  error - The method '_$QuizQuestionFromJson' isn't defined for the type 'QuizQuestion' - lib\features\courses\data\models\quiz_models.dart:22:7 - undefined_method
+  error - Missing concrete implementations of 'getter mixin _$QuizResult on Object.answers', 'getter mixin _$QuizResult on Object.attemptsCount', 'getter mixin _$QuizResult on Object.completedAt', 'getter mixin _$QuizResult on Object.correctness', and 5 more - lib\features\courses\data\models\quiz_models.dart:39:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\quiz_models.dart:41:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\quiz_models.dart:43:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\quiz_models.dart:47:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\courses\data\models\quiz_models.dart:48:6 - invalid_annotation_target
+  error - The method '_$QuizResultFromJson' isn't defined for the type 'QuizResult' - lib\features\courses\data\models\quiz_models.dart:52:7 - undefined_method
+  error - Missing concrete implementations of 'getter mixin _$CourseDetails on Object.course', 'getter mixin _$CourseDetails on Object.lessonTopics', 'getter mixin _$CourseDetails on Object.lessons', 'getter mixin _$CourseDetails on Object.progress', and 1 more - lib\features\courses\data\models\quiz_models.dart:57:7 - non_abstract_class_inherits_abstract_member
+  error - Undefined class 'Course' - lib\features\courses\data\models\quiz_models.dart:59:14 - undefined_class
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.dart:60:23 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.dart:61:32 - non_type_as_type_argument
+  error - Undefined class 'CourseProgress' - lib\features\courses\data\models\quiz_models.dart:62:5 - undefined_class
+  error - The method '_$CourseDetailsFromJson' isn't defined for the type 'CourseDetails' - lib\features\courses\data\models\quiz_models.dart:66:7 - undefined_method
+  error - The method '_$QuizQuestionFromJson' isn't defined for the type '_QuizQuestion' - lib\features\courses\data\models\quiz_models.freezed.dart:219:64 - undefined_method
+  error - The method '_$QuizQuestionToJson' isn't defined for the type '_QuizQuestion' - lib\features\courses\data\models\quiz_models.freezed.dart:243:10 - undefined_method
+  error - The method '_$QuizResultFromJson' isn't defined for the type '_QuizResult' - lib\features\courses\data\models\quiz_models.freezed.dart:507:62 - undefined_method
+  error - The method '_$QuizResultToJson' isn't defined for the type '_QuizResult' - lib\features\courses\data\models\quiz_models.freezed.dart:538:10 - undefined_method
+  error - Undefined class 'Course' - lib\features\courses\data\models\quiz_models.freezed.dart:601:2 - undefined_class
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:601:26 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:601:61 - non_type_as_type_argument
+  error - Undefined class 'CourseProgress' - lib\features\courses\data\models\quiz_models.freezed.dart:601:87 - undefined_class
+  error - Undefined class 'Course' - lib\features\courses\data\models\quiz_models.freezed.dart:634:2 - undefined_class
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:634:22 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:634:53 - non_type_as_type_argument
+  error - Undefined class 'CourseProgress' - lib\features\courses\data\models\quiz_models.freezed.dart:634:75 - undefined_class
+  error - The name 'Course' isn't a type, so it can't be used in an 'as' expression - lib\features\courses\data\models\quiz_models.freezed.dart:654:4 - cast_to_non_type
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:655:9 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:656:18 - non_type_as_type_argument
+  error - The name 'CourseProgress' isn't a type, so it can't be used in an 'as' expression - lib\features\courses\data\models\quiz_models.freezed.dart:657:4 - cast_to_non_type
+  error - Undefined class 'Course' - lib\features\courses\data\models\quiz_models.freezed.dart:742:80 - undefined_class
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:742:101 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:742:133 - non_type_as_type_argument
+  error - Undefined class 'CourseProgress' - lib\features\courses\data\models\quiz_models.freezed.dart:742:156 - undefined_class
+  error - Undefined class 'Course' - lib\features\courses\data\models\quiz_models.freezed.dart:763:75 - undefined_class
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:763:96 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:763:128 - non_type_as_type_argument
+  error - Undefined class 'CourseProgress' - lib\features\courses\data\models\quiz_models.freezed.dart:763:151 - undefined_class
+  error - Undefined class 'Course' - lib\features\courses\data\models\quiz_models.freezed.dart:783:83 - undefined_class
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:783:104 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:783:136 - non_type_as_type_argument
+  error - Undefined class 'CourseProgress' - lib\features\courses\data\models\quiz_models.freezed.dart:783:159 - undefined_class
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:798:59 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:798:108 - non_type_as_type_argument
+  error - The method '_$CourseDetailsFromJson' isn't defined for the type '_CourseDetails' - lib\features\courses\data\models\quiz_models.freezed.dart:799:65 - undefined_method
+  error - Undefined class 'Course' - lib\features\courses\data\models\quiz_models.freezed.dart:801:18 - undefined_class
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:802:14 - non_type_as_type_argument
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:803:26 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:809:23 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:810:35 - non_type_as_type_argument
+  error - Undefined class 'CourseProgress' - lib\features\courses\data\models\quiz_models.freezed.dart:816:18 - undefined_class
+  error - The method '_$CourseDetailsToJson' isn't defined for the type '_CourseDetails' - lib\features\courses\data\models\quiz_models.freezed.dart:826:10 - undefined_method
+  error - Undefined class 'Course' - lib\features\courses\data\models\quiz_models.freezed.dart:851:2 - undefined_class
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:851:22 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:851:53 - non_type_as_type_argument
+  error - Undefined class 'CourseProgress' - lib\features\courses\data\models\quiz_models.freezed.dart:851:75 - undefined_class
+  error - The name 'Course' isn't a type, so it can't be used in an 'as' expression - lib\features\courses\data\models\quiz_models.freezed.dart:871:4 - cast_to_non_type
+  error - The name 'Lesson' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:872:9 - non_type_as_type_argument
+  error - The name 'Topic' isn't a type, so it can't be used as a type argument - lib\features\courses\data\models\quiz_models.freezed.dart:873:18 - non_type_as_type_argument
+  error - The name 'CourseProgress' isn't a type, so it can't be used in an 'as' expression - lib\features\courses\data\models\quiz_models.freezed.dart:874:4 - cast_to_non_type
+  error - Undefined class 'CourseRepositoryRef' - lib\features\courses\data\repositories\course_repository.dart:11:35 - undefined_class
+  error - Undefined class 'AllCoursesRef' - lib\features\courses\providers\courses_provider.dart:10:33 - undefined_class
+  error - Undefined class 'FilteredCoursesRef' - lib\features\courses\providers\courses_provider.dart:18:3 - undefined_class
+  error - Undefined class 'MyCoursesRef' - lib\features\courses\providers\courses_provider.dart:69:32 - undefined_class
+  error - Undefined class 'CourseDetailsRef' - lib\features\courses\providers\courses_provider.dart:79:3 - undefined_class
+  error - Undefined class 'CourseCategoriesRef' - lib\features\courses\providers\courses_provider.dart:132:5 - undefined_class
+  error - Undefined class 'LessonDetailsRef' - lib\features\courses\providers\lessons_provider.dart:11:3 - undefined_class
+  error - Undefined class 'LessonTopicsRef' - lib\features\courses\providers\lessons_provider.dart:21:3 - undefined_class
+  error - Undefined class 'QuizDetailsRef' - lib\features\courses\providers\quiz_provider.dart:10:26 - undefined_class
+warning - The value of the local variable 'questions' isn't used - lib\features\courses\providers\quiz_provider.dart:18:11 - unused_local_variable
+  error - Undefined class 'QuizQuestionsRef' - lib\features\courses\providers\quiz_provider.dart:31:3 - undefined_class
+  error - Undefined class 'QuizResultsRef' - lib\features\courses\providers\quiz_provider.dart:41:3 - undefined_class
+warning - The '!' will have no effect because the receiver can't be null - lib\features\courses\providers\quiz_provider.dart:83:29 - unnecessary_non_null_assertion
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\views\certificate_screen.dart:29:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\views\certificate_screen.dart:35:63 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\views\course_detail_screen.dart:85:50 - deprecated_member_use
+  error - The values in a const list literal must be constants - lib\features\courses\views\course_detail_screen.dart:112:27 - non_constant_list_element
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\views\course_detail_screen.dart:182:39 - deprecated_member_use
+   info - Missing type annotation - lib\features\courses\views\course_detail_screen.dart:220:26 - strict_top_level_inference
+   info - An uninitialized field should have an explicit type annotation - lib\features\courses\views\course_detail_screen.dart:233:9 - prefer_typing_uninitialized_variables
+   info - Missing type annotation - lib\features\courses\views\course_detail_screen.dart:233:9 - strict_top_level_inference
+   info - An uninitialized field should have an explicit type annotation - lib\features\courses\views\course_detail_screen.dart:312:9 - prefer_typing_uninitialized_variables
+   info - Missing type annotation - lib\features\courses\views\course_detail_screen.dart:312:9 - strict_top_level_inference
+   info - An uninitialized field should have an explicit type annotation - lib\features\courses\views\course_detail_screen.dart:347:9 - prefer_typing_uninitialized_variables
+   info - Missing type annotation - lib\features\courses\views\course_detail_screen.dart:347:9 - strict_top_level_inference
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\views\lesson_view_screen.dart:70:43 - deprecated_member_use
+   info - Unnecessary use of 'toList' in a spread - lib\features\courses\views\lesson_view_screen.dart:169:28 - unnecessary_to_list_in_spreads
+   info - Unnecessary use of multiple underscores - lib\features\courses\views\lesson_view_screen.dart:177:30 - unnecessary_underscores
+   info - Unnecessary use of 'toList' in a spread - lib\features\courses\views\my_courses_screen.dart:146:18 - unnecessary_to_list_in_spreads
+warning - The value of the field '_isSubmitting' isn't used - lib\features\courses\views\quiz_screen.dart:23:8 - unused_field
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\views\quiz_screen.dart:105:43 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\views\quiz_screen.dart:201:13 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\views\quiz_screen.dart:202:13 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\views\quiz_screen.dart:221:13 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\views\quiz_screen.dart:222:13 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\views\quiz_screen.dart:234:13 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\views\quiz_screen.dart:235:13 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\certificate_card.dart:45:50 - deprecated_member_use
+   info - Unnecessary use of multiple underscores - lib\features\courses\widgets\certificate_card.dart:60:40 - unnecessary_underscores
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\course_card.dart:126:28 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\empty_courses_state.dart:30:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\empty_courses_state.dart:36:55 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\lesson_card.dart:41:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\lesson_card.dart:123:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\lesson_card.dart:141:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\progress_circle.dart:29:47 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_question_widget.dart:38:32 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_question_widget.dart:60:34 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_question_widget.dart:62:53 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_question_widget.dart:112:30 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_question_widget.dart:114:32 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\widgets\quiz_question_widget.dart:118:13 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\widgets\quiz_question_widget.dart:119:13 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_question_widget.dart:153:26 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_question_widget.dart:155:28 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\widgets\quiz_question_widget.dart:159:9 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\courses\widgets\quiz_question_widget.dart:160:9 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_result_card.dart:34:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_result_card.dart:35:34 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_result_card.dart:39:38 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\quiz_result_card.dart:40:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\video_player_widget.dart:43:37 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\courses\widgets\video_player_widget.dart:118:47 - deprecated_member_use
+  error - Undefined class 'AvailableCoursesRef' - lib\features\createcallcarclecourse\providers\circle_creation_provider.dart:13:39 - undefined_class
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\createcallcarclecourse\views\create_call_circle_course.dart:230:35 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\createcallcarclecourse\views\create_call_circle_course.dart:236:35 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\createcallcarclecourse\views\create_call_circle_course.dart:259:35 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\createcallcarclecourse\views\create_call_circle_course.dart:264:35 - deprecated_member_use
+  error - The getter 'rendered' isn't defined for the type 'String' - lib\features\createcallcarclecourse\widgets\course_selector.dart:72:34 - undefined_getter
+  error - The getter 'rendered' isn't defined for the type 'String' - lib\features\createcallcarclecourse\widgets\course_selector.dart:93:41 - undefined_getter
+  error - The getter 'rendered' isn't defined for the type 'String' - lib\features\createcallcarclecourse\widgets\course_selector.dart:100:45 - undefined_getter
+  error - The getter 'rendered' isn't defined for the type 'String' - lib\features\createcallcarclecourse\widgets\course_selector.dart:103:45 - undefined_getter
+  error - Undefined class 'UpcomingCallsRef' - lib\features\dashboard\providers\dashboard_providers.dart:11:42 - undefined_class
+  error - Undefined class 'CurrentUserProfileRef' - lib\features\dashboard\providers\dashboard_providers.dart:25:40 - undefined_class
+  error - Undefined class 'MyActionItemsRef' - lib\features\dashboard\providers\dashboard_providers.dart:39:40 - undefined_class
+  error - Undefined class 'MyCirclesRef' - lib\features\dashboard\providers\dashboard_providers.dart:53:32 - undefined_class
+warning - Unused import: '../../Donate/views/donate_screen.dart' - lib\features\dashboard\views\dashboard.dart:9:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\features\dashboard\views\dashboard.dart:49:9 - use_build_context_synchronously
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\features\membermanager\widgets\add_member_dialog.dart:111:15 - deprecated_member_use
+  error - Undefined class 'MyCallsRef' - lib\features\mycalls\providers\my_calls_provider.dart:10:28 - undefined_class
+  error - Undefined class 'UpcomingCallsRef' - lib\features\mycalls\providers\my_calls_provider.dart:40:42 - undefined_class
+  error - Undefined class 'FilteredCallsRef' - lib\features\mycalls\providers\my_calls_provider.dart:53:3 - undefined_class
+  error - Undefined class 'CallRef' - lib\features\mycalls\providers\my_calls_provider.dart:78:19 - undefined_class
+  error - Undefined class 'MyCallsRef' - lib\features\mycalls\providers\mycalls_providers.dart:32:28 - undefined_class
+   info - Don't invoke 'print' in production code - lib\features\mycalls\providers\mycalls_providers.dart:52:7 - avoid_print
+  error - The body might complete normally, causing 'null' to be returned, but the return type, 'FutureOr<List<Call>>', is a potentially non-nullable type - lib\features\mycalls\providers\mycalls_providers.dart:61:20 - body_might_complete_normally
+  error - Undefined class 'FilteredCallsRef' - lib\features\mycalls\providers\mycalls_providers.dart:61:34 - undefined_class
+  error - Undefined name 'callStatusFilterNotifierProvider' - lib\features\mycalls\providers\mycalls_providers.dart:63:28 - undefined_identifier
+  error - Undefined class 'CallByIdRef' - lib\features\mycalls\providers\mycalls_providers.dart:88:23 - undefined_class
+  error - Undefined class 'CallNotesRef' - lib\features\mycalls\providers\mycalls_providers.dart:101:30 - undefined_class
+  error - Target of URI doesn't exist: '../providers/circle_details_provider.dart' - lib\features\mycalls\views\call_details_screen.dart:9:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../widgets/circle_member_item.dart' - lib\features\mycalls\views\call_details_screen.dart:10:8 - uri_does_not_exist
+  error - The method 'callDetailsProvider' isn't defined for the type 'CallDetailsScreen' - lib\features\mycalls\views\call_details_screen.dart:43:40 - undefined_method
+  error - The method 'CircleMemberItem' isn't defined for the type 'CallDetailsScreen' - lib\features\mycalls\views\call_details_screen.dart:167:26 - undefined_method
+  error - Undefined name 'callDetailsProvider' - lib\features\mycalls\views\call_details_screen.dart:294:41 - undefined_identifier
+warning - Unused import: '../../common/widgets/empty_state.dart' - lib\features\mycalls\views\mycalls.dart:7:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\features\mycalls\views\mycalls.dart:66:7 - use_build_context_synchronously
+warning - The value of 'refresh' should be used - lib\features\mycalls\views\mycalls.dart:163:31 - unused_result
+   info - Unnecessary use of multiple underscores - lib\features\mycalls\views\mycalls.dart:168:43 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\mycalls\widgets\calls_list_skeleton.dart:20:29 - unnecessary_underscores
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\mycalls\widgets\calls_list_skeleton.dart:24:51 - deprecated_member_use
+  error - Undefined class 'UserProfileRef' - lib\features\profile\providers\profile_providers.dart:11:33 - undefined_class
+  error - The returned type 'UserProfile' isn't returnable from a 'Future<void>' function, as required by the closure's context - lib\features\profile\providers\profile_providers.dart:53:14 - return_of_invalid_type_from_closure
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\profile\views\profile_page.dart:85:55 - deprecated_member_use
+  error - Missing concrete implementations of 'getter mixin _$BBGroup on Object.avatar', 'getter mixin _$BBGroup on Object.cover', 'getter mixin _$BBGroup on Object.creatorId', 'getter mixin _$BBGroup on Object.dateCreated', and 8 more - lib\features\wordpress\data\models\buddyboss_models.dart:8:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:14:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:15:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:16:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:17:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:20:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$BBGroupMember on Object.dateModified', 'getter mixin _$BBGroupMember on Object.groupId', 'getter mixin _$BBGroupMember on Object.id', 'getter mixin _$BBGroupMember on Object.isAdmin', and 5 more - lib\features\wordpress\data\models\buddyboss_models.dart:29:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:32:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:33:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:34:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:35:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:36:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:37:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:38:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$BBActivity on Object.canComment', 'getter mixin _$BBActivity on Object.commentCount', 'getter mixin _$BBActivity on Object.component', 'getter mixin _$BBActivity on Object.content', and 10 more - lib\features\wordpress\data\models\buddyboss_models.dart:47:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:50:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:51:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:52:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:53:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:54:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:55:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:56:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:58:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:59:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:60:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:61:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$BBMessage on Object.dateSent', 'getter mixin _$BBMessage on Object.id', 'getter mixin _$BBMessage on Object.isUnread', 'getter mixin _$BBMessage on Object.message', and 6 more - lib\features\wordpress\data\models\buddyboss_models.dart:70:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:73:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:74:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:75:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:76:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:79:6 - invalid_annotation_target
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:80:6 - invalid_annotation_target
+  error - Missing concrete implementations of 'getter mixin _$BBGroupType on Object.description', 'getter mixin _$BBGroupType on Object.id', 'getter mixin _$BBGroupType on Object.isEnabled', 'getter mixin _$BBGroupType on Object.name', and 1 more - lib\features\wordpress\data\models\buddyboss_models.dart:89:7 - non_abstract_class_inherits_abstract_member
+warning - The annotation 'JsonKey.new' can only be used on fields or getters - lib\features\wordpress\data\models\buddyboss_models.dart:94:6 - invalid_annotation_target
+  error - Undefined class 'WordPressRepositoryRef' - lib\features\wordpress\data\repositories\wordpress_repository.dart:14:41 - undefined_class
+
+577 issues found. (ran in 1.1s)
