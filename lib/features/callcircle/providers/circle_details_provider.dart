@@ -9,7 +9,7 @@ part 'circle_details_provider.g.dart';
 /// Provider for detailed circle information with all related data
 @riverpod
 Future<CircleDetails> circleDetails(
-  CircleDetailsRef ref,
+  Ref ref,
   int circleId,
 ) async {
   final repository = ref.watch(callServiceRepositoryProvider);
@@ -53,7 +53,7 @@ Future<CircleDetails> circleDetails(
 
 /// Provider for call details with all related information
 @riverpod
-Future<CallDetails> callDetails(CallDetailsRef ref, int callId) async {
+Future<CallDetails> callDetails(Ref ref, int callId) async {
   final repository = ref.watch(callServiceRepositoryProvider);
   
   try {

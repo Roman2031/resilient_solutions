@@ -5,7 +5,7 @@ part 'call_service_models.g.dart';
 
 /// User Profile Model
 @freezed
-class UserProfile with _$UserProfile {
+abstract class UserProfile with _$UserProfile {
   const factory UserProfile({
     required int id,
     required String name,
@@ -22,7 +22,7 @@ class UserProfile with _$UserProfile {
 
 /// Circle Model (Call Circle)
 @freezed
-class Circle with _$Circle {
+abstract class Circle with _$Circle {
   const factory Circle({
     required int id,
     required String name,
@@ -45,7 +45,7 @@ class Circle with _$Circle {
 
 /// Circle Member Model
 @freezed
-class CircleMember with _$CircleMember {
+abstract class CircleMember with _$CircleMember {
   const factory CircleMember({
     required int id,
     @JsonKey(name: 'circle_id') required int circleId,
@@ -64,7 +64,7 @@ class CircleMember with _$CircleMember {
 
 /// Call Model (Session)
 @freezed
-class Call with _$Call {
+abstract class Call with _$Call {
   const factory Call({
     required int id,
     @JsonKey(name: 'circle_id') required int circleId,
@@ -84,7 +84,7 @@ class Call with _$Call {
 
 /// Note Model
 @freezed
-class Note with _$Note {
+abstract class Note with _$Note {
   const factory Note({
     required int id,
     @JsonKey(name: 'call_id') required int callId,
@@ -100,7 +100,7 @@ class Note with _$Note {
 
 /// Action Item Model
 @freezed
-class ActionItem with _$ActionItem {
+abstract class ActionItem with _$ActionItem {
   const factory ActionItem({
     required int id,
     @JsonKey(name: 'circle_id') int? circleId,
@@ -121,7 +121,7 @@ class ActionItem with _$ActionItem {
 
 /// Reminder Model
 @freezed
-class Reminder with _$Reminder {
+abstract class Reminder with _$Reminder {
   const factory Reminder({
     required int id,
     @JsonKey(name: 'user_id') required int userId,
@@ -140,7 +140,7 @@ class Reminder with _$Reminder {
 
 /// Device Model (for push notifications)
 @freezed
-class Device with _$Device {
+abstract class Device with _$Device {
   const factory Device({
     required int id,
     @JsonKey(name: 'user_id') required int userId,
@@ -157,7 +157,7 @@ class Device with _$Device {
 
 /// Upcoming Call Model
 @freezed
-class UpcomingCall with _$UpcomingCall {
+abstract class UpcomingCall with _$UpcomingCall {
   const factory UpcomingCall({
     required int id,
     @JsonKey(name: 'circle_id') required int circleId,

@@ -43,6 +43,7 @@ void main() {
     test('UserPermissions should properly identify admin permissions', () {
       final adminPermissions = UserPermissions(
         roles: {UserRole.admin},
+        apiScopes: <String>{},
         canViewCircles: true,
         canManageCircles: true,
         canManageMembers: true,
@@ -61,6 +62,7 @@ void main() {
     test('UserPermissions should properly identify facilitator permissions', () {
       final facilitatorPermissions = UserPermissions(
         roles: {UserRole.facilitator},
+        apiScopes: <String>{},
         canViewCircles: true,
         canManageCircles: true,
         canManageMembers: true,
@@ -79,6 +81,7 @@ void main() {
     test('UserPermissions should properly identify learner permissions', () {
       final learnerPermissions = UserPermissions(
         roles: {UserRole.learner},
+        apiScopes: <String>{},
         canViewCircles: true,
         canManageCircles: false,
         canManageMembers: false,

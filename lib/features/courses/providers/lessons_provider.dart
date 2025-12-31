@@ -8,7 +8,7 @@ part 'lessons_provider.g.dart';
 /// Provider for lesson details
 @riverpod
 Future<Lesson> lessonDetails(
-  LessonDetailsRef ref,
+  Ref ref,
   int lessonId,
 ) async {
   final repository = ref.watch(wordPressRepositoryProvider);
@@ -18,7 +18,7 @@ Future<Lesson> lessonDetails(
 /// Provider for topics by lesson
 @riverpod
 Future<List<Topic>> lessonTopics(
-  LessonTopicsRef ref,
+  Ref ref,
   int lessonId,
 ) async {
   final repository = ref.watch(wordPressRepositoryProvider);

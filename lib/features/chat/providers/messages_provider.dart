@@ -8,7 +8,7 @@ part 'messages_provider.g.dart';
 
 /// Provider for fetching all message threads
 @riverpod
-Future<List<MessageThread>> messageThreads(MessageThreadsRef ref) async {
+Future<List<MessageThread>> messageThreads(Ref ref) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -61,7 +61,7 @@ Future<List<MessageThread>> messageThreads(MessageThreadsRef ref) async {
 /// Provider for fetching messages in a specific thread
 @riverpod
 Future<List<BBMessage>> threadMessages(
-  ThreadMessagesRef ref,
+  Ref ref,
   int threadId,
 ) async {
   final repository = ref.watch(wordPressRepositoryProvider);

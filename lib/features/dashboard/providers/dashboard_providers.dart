@@ -8,7 +8,7 @@ part 'dashboard_providers.g.dart';
 /// Provider for upcoming calls displayed on dashboard
 /// Fetches the user's upcoming calls from the backend
 @riverpod
-Future<List<UpcomingCall>> upcomingCalls(UpcomingCallsRef ref) async {
+Future<List<UpcomingCall>> upcomingCalls(Ref ref) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -22,7 +22,7 @@ Future<List<UpcomingCall>> upcomingCalls(UpcomingCallsRef ref) async {
 /// Provider for current user profile
 /// Fetches the user's profile information from the backend
 @riverpod
-Future<UserProfile> currentUserProfile(CurrentUserProfileRef ref) async {
+Future<UserProfile> currentUserProfile(Ref ref) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -36,7 +36,7 @@ Future<UserProfile> currentUserProfile(CurrentUserProfileRef ref) async {
 /// Provider for user action items
 /// Fetches pending action items assigned to the user
 @riverpod
-Future<List<ActionItem>> myActionItems(MyActionItemsRef ref) async {
+Future<List<ActionItem>> myActionItems(Ref ref) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -50,7 +50,7 @@ Future<List<ActionItem>> myActionItems(MyActionItemsRef ref) async {
 /// Provider for user's circles
 /// Fetches all circles the user is a member of
 @riverpod
-Future<List<Circle>> myCircles(MyCirclesRef ref) async {
+Future<List<Circle>> myCircles(Ref ref) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {

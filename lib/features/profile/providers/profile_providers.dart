@@ -8,7 +8,7 @@ part 'profile_providers.g.dart';
 /// Provider for user profile data
 /// Fetches and caches the current user's profile
 @riverpod
-Future<UserProfile> userProfile(UserProfileRef ref) async {
+Future<UserProfile> userProfile(Ref ref) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -38,10 +38,11 @@ class ProfileUpdateNotifier extends _$ProfileUpdateNotifier {
     // Set loading state
     state = const AsyncValue.loading();
 
+    UserProfile? updatedProfile;
     state = await AsyncValue.guard(() async {
       final repository = ref.read(callServiceRepositoryProvider);
       
-      final updatedProfile = await repository.updateMyProfile(
+      updatedProfile = await repository.updateMyProfile(
         name: name,
         email: email,
         phoneNumber: phoneNumber,
@@ -50,14 +51,18 @@ class ProfileUpdateNotifier extends _$ProfileUpdateNotifier {
       // Invalidate the profile provider to refetch fresh data
       ref.invalidate(userProfileProvider);
 
-      return updatedProfile;
+      // Do not return the profile because the notifier's state is AsyncValue<void>
     });
 
-    // Return the updated profile or throw error
-    return state.when(
-      data: (profile) => profile as UserProfile,
-      loading: () => throw Exception('Update in progress'),
-      error: (error, stack) => throw error,
-    );
+    // Propagate any errors from the guarded call
+    if (state.hasError) {
+      throw state.error ?? Exception('Unknown error during profile update');
+    }
+
+    if (updatedProfile == null) {
+      throw Exception('Failed to update profile');
+    }
+
+    return updatedProfile!;
   }
 }

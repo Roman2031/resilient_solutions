@@ -3,11 +3,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:intl/intl.dart';
+import 'package:kindomcall/features/callcircle/providers/circle_details_provider.dart';
+import 'package:kindomcall/features/callcircle/widgets/circle_member_item.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+
 import '../../common/widgets/error_view.dart';
-import '../providers/circle_details_provider.dart';
-import '../widgets/circle_member_item.dart';
+//import '../providers/circle_details_provider.dart';
 import '../../mycalls/widgets/call_card.dart';
 
 class CallDetailsScreen extends ConsumerWidget {

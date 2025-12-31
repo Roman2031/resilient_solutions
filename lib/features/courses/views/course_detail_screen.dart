@@ -106,10 +106,10 @@ class _CourseDetailScreenState extends ConsumerState<CourseDetailScreen>
                 delegate: _SliverAppBarDelegate(
                   TabBar(
                     controller: _tabController,
-                    tabs: const [
-                      Tab(text: 'Overview'),
-                      Tab(text: 'Curriculum'),
-                      if (isEnrolled) Tab(text: 'Progress'),
+                    tabs: [
+                      const Tab(text: 'Overview'),
+                      const Tab(text: 'Curriculum'),
+                      if (isEnrolled) const Tab(text: 'Progress'),
                     ],
                   ),
                 ),

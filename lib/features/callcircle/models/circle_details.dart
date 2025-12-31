@@ -6,7 +6,7 @@ part 'circle_details.g.dart';
 
 /// Extended circle details with related data
 @freezed
-class CircleDetails with _$CircleDetails {
+abstract class CircleDetails with _$CircleDetails {
   const factory CircleDetails({
     required Circle circle,
     required List<CircleMember> members,
@@ -22,7 +22,7 @@ class CircleDetails with _$CircleDetails {
 
 /// Call details with all related information
 @freezed
-class CallDetails with _$CallDetails {
+abstract class CallDetails with _$CallDetails {
   const factory CallDetails({
     required Call call,
     required List<Note> notes,

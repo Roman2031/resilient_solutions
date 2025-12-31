@@ -8,7 +8,7 @@ part 'notes_providers.g.dart';
 /// Provider for all notes across all calls
 /// Aggregates notes from all circles the user is a member of
 @riverpod
-Future<List<Note>> allNotes(AllNotesRef ref) async {
+Future<List<Note>> allNotes(Ref ref) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -130,7 +130,7 @@ class NoteActionsNotifier extends _$NoteActionsNotifier {
 
 /// Provider for notes by call ID
 @riverpod
-Future<List<Note>> notesByCall(NotesByCallRef ref, int callId) async {
+Future<List<Note>> notesByCall(Ref ref, int callId) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -144,7 +144,7 @@ Future<List<Note>> notesByCall(NotesByCallRef ref, int callId) async {
 /// Provider for searching notes
 /// Caches all notes to avoid unnecessary API calls during search
 @riverpod
-Future<List<Note>> searchNotes(SearchNotesRef ref, String query) async {
+Future<List<Note>> searchNotes(Ref ref, String query) async {
   // Watch the base notes provider to get cached data
   final allNotes = await ref.watch(allNotesProvider.future);
   

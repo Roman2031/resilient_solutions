@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../../../../core/data/base_repository.dart';
 import '../../../../core/network/api_service.dart';
@@ -9,7 +11,7 @@ part 'call_service_repository.g.dart';
 /// Implements all Laravel Call Service API endpoints
 /// Base URL: https://callcircle.resilentsolutions.com/api
 @riverpod
-CallServiceRepository callServiceRepository(CallServiceRepositoryRef ref) {
+CallServiceRepository callServiceRepository(Ref ref) {
   final apiService = ref.watch(apiServiceProvider);
   return CallServiceRepository(apiService);
 }
@@ -575,7 +577,7 @@ class CallServiceRepository extends BaseRepository {
       );
       return handleResponse(
         response,
-        (data) => Reminder.fromJson(json),
+        (data) => Reminder.fromJson(data),
       );
     });
   }

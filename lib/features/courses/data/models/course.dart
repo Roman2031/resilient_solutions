@@ -6,7 +6,7 @@ part 'course.g.dart';
 /// LearnDash Course Model
 /// Represents a course from WordPress LearnDash LMS
 @freezed
-class Course with _$Course {
+abstract class Course with _$Course {
   const factory Course({
     required int id,
     required String title,
@@ -36,7 +36,7 @@ class Course with _$Course {
 
 /// Lesson Model
 @freezed
-class Lesson with _$Lesson {
+abstract class Lesson with _$Lesson {
   const factory Lesson({
     required int id,
     required String title,
@@ -57,7 +57,7 @@ class Lesson with _$Lesson {
 
 /// Topic Model
 @freezed
-class Topic with _$Topic {
+abstract class Topic with _$Topic {
   const factory Topic({
     required int id,
     required String title,
@@ -76,7 +76,7 @@ class Topic with _$Topic {
 
 /// Quiz Model
 @freezed
-class Quiz with _$Quiz {
+abstract class Quiz with _$Quiz {
   const factory Quiz({
     required int id,
     required String title,
@@ -96,7 +96,7 @@ class Quiz with _$Quiz {
 
 /// Course Progress Model
 @freezed
-class CourseProgress with _$CourseProgress {
+abstract class CourseProgress with _$CourseProgress {
   const factory CourseProgress({
     @JsonKey(name: 'course_id') required int courseId,
     @JsonKey(name: 'total_lessons') required int totalLessons,

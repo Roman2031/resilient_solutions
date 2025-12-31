@@ -7,7 +7,7 @@ part 'my_calls_provider.g.dart';
 
 /// Provider for fetching all user's calls
 @riverpod
-Future<List<Call>> myCalls(MyCallsRef ref) async {
+Future<List<Call>> myCalls(Ref ref) async {
   final repository = ref.watch(callServiceRepositoryProvider);
   
   try {
@@ -37,7 +37,7 @@ Future<List<Call>> myCalls(MyCallsRef ref) async {
 
 /// Provider for fetching upcoming calls
 @riverpod
-Future<List<UpcomingCall>> upcomingCalls(UpcomingCallsRef ref) async {
+Future<List<UpcomingCall>> upcomingCalls(Ref ref) async {
   final repository = ref.watch(callServiceRepositoryProvider);
   
   try {
@@ -50,7 +50,7 @@ Future<List<UpcomingCall>> upcomingCalls(UpcomingCallsRef ref) async {
 /// Provider for filtered calls
 @riverpod
 Future<List<Call>> filteredCalls(
-  FilteredCallsRef ref,
+  Ref ref,
   CallFilter filter,
   String searchQuery,
 ) async {
@@ -75,7 +75,7 @@ Future<List<Call>> filteredCalls(
 
 /// Provider for a specific call by ID
 @riverpod
-Future<Call> call(CallRef ref, int callId) async {
+Future<Call> call(Ref ref, int callId) async {
   final repository = ref.watch(callServiceRepositoryProvider);
   
   try {

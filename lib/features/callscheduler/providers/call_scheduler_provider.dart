@@ -9,7 +9,7 @@ part 'call_scheduler_provider.g.dart';
 /// Provider for calendar calls grouped by date
 @riverpod
 Future<Map<DateTime, List<Call>>> calendarCalls(
-  CalendarCallsRef ref,
+  Ref ref,
   DateTime month,
 ) async {
   final repository = ref.watch(callServiceRepositoryProvider);

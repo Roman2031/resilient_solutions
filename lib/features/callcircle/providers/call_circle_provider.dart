@@ -44,28 +44,28 @@ class CallCircleDetail extends _$CallCircleDetail {
   }
 
   /// Update call circle
-  Future<void> update({
-    String? name,
-    String? description,
-    int? maxMembers,
-    String? meetingSchedule,
-    String? meetingLink,
-    String? status,
-  }) async {
-    state = const AsyncValue.loading();
-    state = await AsyncValue.guard(() async {
-      final repository = ref.read(callCircleRepositoryProvider);
-      return await repository.updateCallCircle(
-        id: circleId,
-        name: name,
-        description: description,
-        maxMembers: maxMembers,
-        meetingSchedule: meetingSchedule,
-        meetingLink: meetingLink,
-        status: status,
-      );
-    });
-  }
+  //Future<void> update({
+  //   String? name,
+  //   String? description,
+  //   int? maxMembers,
+  //   String? meetingSchedule,
+  //   String? meetingLink,
+  //   String? status,
+  // }) async {
+  //   state = const AsyncValue.loading();
+  //   state = await AsyncValue.guard(() async {
+  //     final repository = ref.read(callCircleRepositoryProvider);
+  //     return await repository.updateCallCircle(
+  //       id: circleId,
+  //       name: name,
+  //       description: description,
+  //       maxMembers: maxMembers,
+  //       meetingSchedule: meetingSchedule,
+  //       meetingLink: meetingLink,
+  //       status: status,
+  //     );
+  //   });
+  //}
 }
 
 /// Call Circle Members Provider

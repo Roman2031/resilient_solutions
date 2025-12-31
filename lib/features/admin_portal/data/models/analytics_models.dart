@@ -5,7 +5,7 @@ part 'analytics_models.g.dart';
 
 /// User Analytics Model
 @freezed
-class UserAnalytics with _$UserAnalytics {
+abstract class UserAnalytics with _$UserAnalytics {
   const factory UserAnalytics({
     @JsonKey(name: 'user_growth') required List<DataPoint> userGrowth,
     @JsonKey(name: 'users_by_role') required Map<String, int> usersByRole,
@@ -14,14 +14,13 @@ class UserAnalytics with _$UserAnalytics {
     @JsonKey(name: 'active_users') required int activeUsers,
     @JsonKey(name: 'total_users') required int totalUsers,
   }) = _UserAnalytics;
-
   factory UserAnalytics.fromJson(Map<String, dynamic> json) =>
       _$UserAnalyticsFromJson(json);
 }
 
 /// Data Point for Charts
 @freezed
-class DataPoint with _$DataPoint {
+abstract class DataPoint with _$DataPoint {
   const factory DataPoint({
     required DateTime date,
     required double value,
@@ -33,7 +32,7 @@ class DataPoint with _$DataPoint {
 
 /// Circle Analytics Model
 @freezed
-class CircleAnalytics with _$CircleAnalytics {
+abstract class CircleAnalytics with _$CircleAnalytics {
   const factory CircleAnalytics({
     @JsonKey(name: 'total_circles') required int totalCircles,
     @JsonKey(name: 'active_circles') required int activeCircles,
@@ -48,7 +47,7 @@ class CircleAnalytics with _$CircleAnalytics {
 
 /// Learning Analytics Model
 @freezed
-class LearningAnalytics with _$LearningAnalytics {
+abstract class LearningAnalytics with _$LearningAnalytics {
   const factory LearningAnalytics({
     @JsonKey(name: 'total_enrollments') required int totalEnrollments,
     @JsonKey(name: 'average_completion_rate') required double averageCompletionRate,
@@ -63,7 +62,7 @@ class LearningAnalytics with _$LearningAnalytics {
 
 /// Popular Course Model
 @freezed
-class PopularCourse with _$PopularCourse {
+abstract class PopularCourse with _$PopularCourse {
   const factory PopularCourse({
     required int id,
     required String name,
@@ -77,7 +76,7 @@ class PopularCourse with _$PopularCourse {
 
 /// Call Analytics Model
 @freezed
-class CallAnalytics with _$CallAnalytics {
+abstract class CallAnalytics with _$CallAnalytics {
   const factory CallAnalytics({
     @JsonKey(name: 'total_calls') required int totalCalls,
     @JsonKey(name: 'completed_calls') required int completedCalls,
@@ -92,7 +91,7 @@ class CallAnalytics with _$CallAnalytics {
 
 /// Engagement Analytics Model
 @freezed
-class EngagementAnalytics with _$EngagementAnalytics {
+abstract class EngagementAnalytics with _$EngagementAnalytics {
   const factory EngagementAnalytics({
     @JsonKey(name: 'messages_count') required int messagesCount,
     @JsonKey(name: 'notes_count') required int notesCount,
@@ -106,7 +105,7 @@ class EngagementAnalytics with _$EngagementAnalytics {
 
 /// Flagged Content Model
 @freezed
-class FlaggedContent with _$FlaggedContent {
+abstract class FlaggedContent with _$FlaggedContent {
   const factory FlaggedContent({
     required int id,
     @JsonKey(name: 'content_type') required String contentType,
@@ -125,7 +124,7 @@ class FlaggedContent with _$FlaggedContent {
 
 /// System Settings Model
 @freezed
-class SystemSettings with _$SystemSettings {
+abstract class SystemSettings with _$SystemSettings {
   const factory SystemSettings({
     @JsonKey(name: 'platform_name') required String platformName,
     @JsonKey(name: 'default_language') required String defaultLanguage,

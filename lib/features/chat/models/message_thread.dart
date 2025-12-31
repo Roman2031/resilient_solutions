@@ -6,7 +6,7 @@ part 'message_thread.g.dart';
 /// Message Thread Model
 /// Represents a conversation thread with participants
 @freezed
-class MessageThread with _$MessageThread {
+abstract class MessageThread with _$MessageThread {
   const MessageThread._();
 
   const factory MessageThread({
@@ -35,7 +35,7 @@ class MessageThread with _$MessageThread {
 /// Thread Participant Model
 /// Represents a user participating in a message thread
 @freezed
-class ThreadParticipant with _$ThreadParticipant {
+abstract class ThreadParticipant with _$ThreadParticipant {
   const factory ThreadParticipant({
     required int id,
     required String name,

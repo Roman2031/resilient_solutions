@@ -7,7 +7,7 @@ part 'actions_provider.g.dart';
 
 /// Provider for all action items assigned to the current user
 @riverpod
-Future<List<ActionItem>> myActions(MyActionsRef ref) async {
+Future<List<ActionItem>> myActions(Ref ref) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -42,7 +42,7 @@ Future<List<ActionItem>> myActions(MyActionsRef ref) async {
 /// Provider for filtered action items by status
 @riverpod
 Future<List<ActionItem>> filteredActions(
-  FilteredActionsRef ref,
+  Ref ref,
   String status,
 ) async {
   final allActions = await ref.watch(myActionsProvider.future);
@@ -57,7 +57,7 @@ Future<List<ActionItem>> filteredActions(
 /// Provider for searching action items
 @riverpod
 Future<List<ActionItem>> searchActions(
-  SearchActionsRef ref,
+  Ref ref,
   String query,
 ) async {
   final allActions = await ref.watch(myActionsProvider.future);

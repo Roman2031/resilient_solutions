@@ -8,7 +8,7 @@ part 'courses_provider.g.dart';
 
 /// Provider for all courses
 @riverpod
-Future<List<Course>> allCourses(AllCoursesRef ref) async {
+Future<List<Course>> allCourses(Ref ref) async {
   final repository = ref.watch(wordPressRepositoryProvider);
   return await repository.getCourses();
 }
@@ -16,7 +16,7 @@ Future<List<Course>> allCourses(AllCoursesRef ref) async {
 /// Provider for filtered courses
 @riverpod
 Future<List<Course>> filteredCourses(
-  FilteredCoursesRef ref, {
+  Ref ref, {
   String? searchQuery,
   int? categoryId,
   CourseSortOption? sortOption,
@@ -67,7 +67,7 @@ Future<List<Course>> filteredCourses(
 
 /// Provider for my enrolled courses
 @riverpod
-Future<List<Course>> myCourses(MyCoursesRef ref) async {
+Future<List<Course>> myCourses(Ref ref) async {
   final courses = await ref.watch(allCoursesProvider.future);
 
   // Filter only enrolled courses
@@ -77,7 +77,7 @@ Future<List<Course>> myCourses(MyCoursesRef ref) async {
 /// Provider for course details
 @riverpod
 Future<CourseDetails> courseDetails(
-  CourseDetailsRef ref,
+  Ref ref,
   int courseId,
 ) async {
   final repository = ref.watch(wordPressRepositoryProvider);
@@ -130,7 +130,7 @@ Future<CourseDetails> courseDetails(
 /// Provider for course categories
 @riverpod
 Future<List<Map<String, dynamic>>> courseCategories(
-    CourseCategoriesRef ref) async {
+    Ref ref) async {
   final repository = ref.watch(wordPressRepositoryProvider);
   return await repository.getCourseCategories();
 }

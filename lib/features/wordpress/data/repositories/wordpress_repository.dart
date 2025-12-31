@@ -11,7 +11,7 @@ part 'wordpress_repository.g.dart';
 /// Implements all WordPress + LearnDash + BuddyBoss API endpoints
 /// Base URL: https://learning.kingdominc.com/wp-json
 @riverpod
-WordPressRepository wordPressRepository(WordPressRepositoryRef ref) {
+WordPressRepository wordPressRepository(Ref ref) {
   final apiService = ref.watch(apiServiceProvider);
   return WordPressRepository(apiService);
 }

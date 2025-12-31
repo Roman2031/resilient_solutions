@@ -79,7 +79,12 @@ class AppRouter {
       },
 
       // Refresh listenable for auth state changes
-      refreshListenable: _GoRouterRefreshStream(ref.read(authRepositoryProvider.notifier).stream),
+      // Use a ValueNotifier updated via ref.listen to avoid relying on a .stream on the repository
+      refreshListenable: (() {
+        final notifier = ValueNotifier<int>(0);
+        ref.listen<AsyncValue<AuthState>>(authRepositoryProvider, (_, __) => notifier.value++);
+        return notifier;
+      })(),
 
       routes: [
         // Auth Routes

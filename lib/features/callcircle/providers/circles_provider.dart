@@ -7,7 +7,7 @@ part 'circles_provider.g.dart';
 
 /// Provider for fetching user's circles
 @riverpod
-Future<List<Circle>> myCircles(MyCirclesRef ref) async {
+Future<List<Circle>> myCircles(Ref ref) async {
   final repository = ref.watch(callServiceRepositoryProvider);
   
   try {
@@ -19,7 +19,7 @@ Future<List<Circle>> myCircles(MyCirclesRef ref) async {
 
 /// Provider for a specific circle
 @riverpod
-Future<Circle> circle(CircleRef ref, int circleId) async {
+Future<Circle> circle(Ref ref, int circleId) async {
   final repository = ref.watch(callServiceRepositoryProvider);
   
   try {
@@ -32,7 +32,7 @@ Future<Circle> circle(CircleRef ref, int circleId) async {
 /// Provider for circle members
 @riverpod
 Future<List<CircleMember>> circleMembers(
-  CircleMembersRef ref,
+  Ref ref,
   int circleId,
 ) async {
   final repository = ref.watch(callServiceRepositoryProvider);
@@ -46,7 +46,7 @@ Future<List<CircleMember>> circleMembers(
 
 /// Provider for circle calls
 @riverpod
-Future<List<Call>> circleCalls(CircleCallsRef ref, int circleId) async {
+Future<List<Call>> circleCalls(Ref ref, int circleId) async {
   final repository = ref.watch(callServiceRepositoryProvider);
   
   try {

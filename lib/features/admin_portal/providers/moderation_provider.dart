@@ -9,7 +9,7 @@ part 'moderation_provider.g.dart';
 /// Flagged Content Provider
 @riverpod
 Future<List<FlaggedContent>> flaggedContent(
-  FlaggedContentRef ref, {
+  Ref ref, {
   String? status,
   String? contentType,
 }) async {
@@ -28,7 +28,7 @@ Future<List<FlaggedContent>> flaggedContent(
 
 /// Moderation History Provider
 @riverpod
-Future<List<AuditLog>> moderationHistory(ModerationHistoryRef ref) async {
+Future<List<AuditLog>> moderationHistory(Ref ref) async {
   final repository = ref.watch(adminPortalRepositoryProvider);
   final permissions = ref.watch(userPermissionsProvider);
   

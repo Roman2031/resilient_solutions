@@ -53,7 +53,7 @@ class _AllNotesScreenState extends ConsumerState<AllNotesScreen> {
     if (confirmed == true) {
       try {
         await ref
-            .read(noteActionsNotifierProvider.notifier)
+            .read(noteActionsProvider.notifier)
             .deleteNote(note.id);
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -84,7 +84,7 @@ class _AllNotesScreenState extends ConsumerState<AllNotesScreen> {
 
     if (result != null) {
       try {
-        await ref.read(noteActionsNotifierProvider.notifier).updateNote(
+        await ref.read(noteActionsProvider.notifier).updateNote(
               noteId: note.id,
               content: result['content'],
               isPrivate: result['isPrivate'],

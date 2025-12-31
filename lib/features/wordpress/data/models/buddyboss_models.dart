@@ -5,7 +5,7 @@ part 'buddyboss_models.g.dart';
 
 /// BuddyBoss Group Model
 @freezed
-class BBGroup with _$BBGroup {
+abstract class BBGroup with _$BBGroup {
   const factory BBGroup({
     required int id,
     required String name,
@@ -26,7 +26,7 @@ class BBGroup with _$BBGroup {
 
 /// BuddyBoss Group Member Model
 @freezed
-class BBGroupMember with _$BBGroupMember {
+abstract class BBGroupMember with _$BBGroupMember {
   const factory BBGroupMember({
     required int id,
     @JsonKey(name: 'user_id') required int userId,
@@ -44,7 +44,7 @@ class BBGroupMember with _$BBGroupMember {
 
 /// BuddyBoss Activity Model
 @freezed
-class BBActivity with _$BBActivity {
+abstract class BBActivity with _$BBActivity {
   const factory BBActivity({
     required int id,
     @JsonKey(name: 'user_id') required int userId,
@@ -67,7 +67,7 @@ class BBActivity with _$BBActivity {
 
 /// BuddyBoss Message Model
 @freezed
-class BBMessage with _$BBMessage {
+abstract class BBMessage with _$BBMessage {
   const factory BBMessage({
     required int id,
     @JsonKey(name: 'sender_id') required int senderId,
@@ -86,7 +86,7 @@ class BBMessage with _$BBMessage {
 
 /// Group Type Model
 @freezed
-class BBGroupType with _$BBGroupType {
+abstract class BBGroupType with _$BBGroupType {
   const factory BBGroupType({
     required int id,
     required String name,

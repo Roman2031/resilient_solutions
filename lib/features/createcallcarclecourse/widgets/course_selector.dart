@@ -69,7 +69,7 @@ class CourseSelector extends StatelessWidget {
                 return DropdownMenuItem<Course>(
                   value: course,
                   child: Text(
-                    course.title.rendered,
+                    course.title,
                     overflow: TextOverflow.ellipsis,
                   ),
                 );
@@ -90,17 +90,17 @@ class CourseSelector extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  selectedCourse!.title.rendered,
+                  selectedCourse!.title,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 14.sp,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                if (selectedCourse!.excerpt.rendered.isNotEmpty) ...[
+                if (selectedCourse!.excerpt.isNotEmpty) ...[
                   Gap(8.h),
                   Text(
-                    selectedCourse!.excerpt.rendered
+                    selectedCourse!.excerpt
                         .replaceAll(RegExp(r'<[^>]*>'), ''),
                     style: TextStyle(
                       color: Colors.white70,
@@ -118,3 +118,4 @@ class CourseSelector extends StatelessWidget {
     );
   }
 }
+

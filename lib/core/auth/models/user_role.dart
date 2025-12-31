@@ -93,7 +93,7 @@ extension UserRoleExtension on UserRole {
 /// Keycloak ID Token claims
 /// Example token structure consumed by clients/services
 @freezed
-class KeycloakToken with _$KeycloakToken {
+abstract class KeycloakToken with _$KeycloakToken {
   const factory KeycloakToken({
     /// Subject identifier (user ID)
     required String sub,
@@ -129,13 +129,15 @@ class KeycloakToken with _$KeycloakToken {
     Map<String, dynamic>? additionalClaims,
   }) = _KeycloakToken;
 
+  const KeycloakToken._();
+
   factory KeycloakToken.fromJson(Map<String, dynamic> json) =>
       _$KeycloakTokenFromJson(json);
 }
 
 /// Realm access object containing canonical roles
 @freezed
-class RealmAccess with _$RealmAccess {
+abstract class RealmAccess with _$RealmAccess {
   const factory RealmAccess({
     required List<String> roles,
   }) = _RealmAccess;
@@ -146,7 +148,7 @@ class RealmAccess with _$RealmAccess {
 
 /// Resource access for client-specific scopes
 @freezed
-class ResourceAccess with _$ResourceAccess {
+abstract class ResourceAccess with _$ResourceAccess {
   const factory ResourceAccess({
     required List<String> roles,
   }) = _ResourceAccess;
@@ -157,7 +159,7 @@ class ResourceAccess with _$ResourceAccess {
 
 /// User permissions derived from roles and token claims
 @freezed
-class UserPermissions with _$UserPermissions {
+abstract class UserPermissions with _$UserPermissions {
   const factory UserPermissions({
     /// User's canonical roles from Keycloak
     required List<UserRole> roles,

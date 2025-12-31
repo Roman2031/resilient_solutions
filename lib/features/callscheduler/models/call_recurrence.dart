@@ -34,7 +34,7 @@ enum RecurrenceType {
 
 /// Recurrence configuration for calls
 @freezed
-class CallRecurrence with _$CallRecurrence {
+abstract class CallRecurrence with _$CallRecurrence {
   const factory CallRecurrence({
     required RecurrenceType type,
     DateTime? endDate,

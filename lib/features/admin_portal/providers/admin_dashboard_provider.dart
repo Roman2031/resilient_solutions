@@ -7,7 +7,7 @@ part 'admin_dashboard_provider.g.dart';
 
 /// Admin Dashboard Stats Provider
 @riverpod
-Future<AdminDashboardStats> adminDashboardStats(AdminDashboardStatsRef ref) async {
+Future<AdminDashboardStats> adminDashboardStats(Ref ref) async {
   final repository = ref.watch(adminPortalRepositoryProvider);
   final permissions = ref.watch(userPermissionsProvider);
   
@@ -21,7 +21,7 @@ Future<AdminDashboardStats> adminDashboardStats(AdminDashboardStatsRef ref) asyn
 /// Recent Activity Provider
 @riverpod
 Future<List<AdminActivity>> recentActivity(
-  RecentActivityRef ref, {
+  Ref ref, {
   int limit = 20,
 }) async {
   final repository = ref.watch(adminPortalRepositoryProvider);
@@ -36,7 +36,7 @@ Future<List<AdminActivity>> recentActivity(
 
 /// System Health Provider
 @riverpod
-Future<SystemHealth> systemHealth(SystemHealthRef ref) async {
+Future<SystemHealth> systemHealth(Ref ref) async {
   final repository = ref.watch(adminPortalRepositoryProvider);
   final permissions = ref.watch(userPermissionsProvider);
   

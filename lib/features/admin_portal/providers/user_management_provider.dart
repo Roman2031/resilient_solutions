@@ -8,7 +8,7 @@ part 'user_management_provider.g.dart';
 /// All Users Provider with pagination and filters
 @riverpod
 Future<List<AdminUser>> allUsers(
-  AllUsersRef ref, {
+  Ref ref, {
   int page = 1,
   int perPage = 20,
   String? search,
@@ -33,7 +33,7 @@ Future<List<AdminUser>> allUsers(
 /// User Details Provider
 @riverpod
 Future<AdminUserDetails> userDetails(
-  UserDetailsRef ref,
+  Ref ref,
   int userId,
 ) async {
   final repository = ref.watch(adminPortalRepositoryProvider);

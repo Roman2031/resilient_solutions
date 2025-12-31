@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.kindomcall"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -24,10 +24,11 @@ android {
         applicationId = "com.example.kindomcall"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 27
+        targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        manifestPlaceholders["appAuthRedirectScheme"] = "com.example.kindomcall"
     }
 
     buildTypes {
@@ -38,6 +39,7 @@ android {
         }
     }
 }
+
 
 flutter {
     source = "../.."

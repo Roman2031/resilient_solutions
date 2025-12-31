@@ -8,7 +8,7 @@ part 'quiz_provider.g.dart';
 
 /// Provider for quiz details with questions
 @riverpod
-Future<Quiz> quizDetails(QuizDetailsRef ref, int quizId) async {
+Future<Quiz> quizDetails(Ref ref, int quizId) async {
   final repository = ref.watch(wordPressRepositoryProvider);
 
   // Fetch quiz
@@ -29,7 +29,7 @@ Future<Quiz> quizDetails(QuizDetailsRef ref, int quizId) async {
 /// Provider for quiz questions
 @riverpod
 Future<List<QuizQuestion>> quizQuestions(
-  QuizQuestionsRef ref,
+  Ref ref,
   int quizId,
 ) async {
   final repository = ref.watch(wordPressRepositoryProvider);
@@ -39,7 +39,7 @@ Future<List<QuizQuestion>> quizQuestions(
 /// Provider for quiz results
 @riverpod
 Future<QuizResult?> quizResults(
-  QuizResultsRef ref,
+  Ref ref,
   int quizId,
 ) async {
   final repository = ref.watch(wordPressRepositoryProvider);

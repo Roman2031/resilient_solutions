@@ -29,7 +29,7 @@ class CallStatusFilterNotifier extends _$CallStatusFilterNotifier {
 /// Provider for user's calls
 /// Fetches all calls for circles the user is a member of
 @riverpod
-Future<List<Call>> myCalls(MyCallsRef ref) async {
+Future<List<Call>> myCalls(Ref ref) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -57,10 +57,10 @@ Future<List<Call>> myCalls(MyCallsRef ref) async {
 }
 
 /// Provider for filtered calls based on selected status
-@riverpod
-Future<List<Call>> filteredCalls(FilteredCallsRef ref) async {
+//@riverpod
+Future<List<Call>> filteredCalls(Ref ref) async {
   final calls = await ref.watch(myCallsProvider.future);
-  final filter = ref.watch(callStatusFilterNotifierProvider);
+  final filter = calls;    
   
   final now = DateTime.now();
   
@@ -81,11 +81,12 @@ Future<List<Call>> filteredCalls(FilteredCallsRef ref) async {
       return calls.where((call) => call.status == 'cancelled').toList()
         ..sort((a, b) => b.scheduledAt.compareTo(a.scheduledAt));
   }
+  return calls;
 }
 
 /// Provider for a specific call by ID
 @riverpod
-Future<Call> callById(CallByIdRef ref, int callId) async {
+Future<Call> callById(Ref ref, int callId) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {
@@ -98,7 +99,7 @@ Future<Call> callById(CallByIdRef ref, int callId) async {
 
 /// Provider for call notes
 @riverpod
-Future<List<Note>> callNotes(CallNotesRef ref, int callId) async {
+Future<List<Note>> callNotes(Ref ref, int callId) async {
   // Ensure user is authenticated
   final authState = await ref.watch(authRepositoryProvider.future);
   if (authState is! AuthenticatedState) {

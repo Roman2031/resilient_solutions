@@ -8,7 +8,7 @@ part 'circle_management_provider.g.dart';
 
 /// Provider for circles managed by the current user (facilitator)
 @riverpod
-Future<List<Circle>> managedCircles(ManagedCirclesRef ref) async {
+Future<List<Circle>> managedCircles(Ref ref) async {
   final repository = ref.watch(callServiceRepositoryProvider);
   final authState = ref.watch(authRepositoryProvider);
   

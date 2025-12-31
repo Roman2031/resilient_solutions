@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_html/flutter_html.dart';
+import 'package:kindomcall/features/courses/data/models/course.dart';
 import '../providers/lessons_provider.dart';
 import '../data/models/quiz_models.dart';
 

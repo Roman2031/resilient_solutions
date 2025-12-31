@@ -5,7 +5,7 @@ part 'admin_models.g.dart';
 
 /// Admin User Model
 @freezed
-class AdminUser with _$AdminUser {
+abstract class AdminUser with _$AdminUser {
   const factory AdminUser({
     required int id,
     required String name,
@@ -25,7 +25,7 @@ class AdminUser with _$AdminUser {
 
 /// Admin Circle Model
 @freezed
-class AdminCircle with _$AdminCircle {
+abstract class AdminCircle with _$AdminCircle {
   const factory AdminCircle({
     required int id,
     required String name,
@@ -48,7 +48,7 @@ class AdminCircle with _$AdminCircle {
 
 /// Admin Dashboard Stats Model
 @freezed
-class AdminDashboardStats with _$AdminDashboardStats {
+abstract class AdminDashboardStats with _$AdminDashboardStats {
   const factory AdminDashboardStats({
     @JsonKey(name: 'total_users') required int totalUsers,
     @JsonKey(name: 'active_users') required int activeUsers,
@@ -68,7 +68,7 @@ class AdminDashboardStats with _$AdminDashboardStats {
 
 /// User Growth Stats
 @freezed
-class UserGrowth with _$UserGrowth {
+abstract class UserGrowth with _$UserGrowth {
   const factory UserGrowth({
     @JsonKey(name: 'new_users_today') required int newUsersToday,
     @JsonKey(name: 'new_users_this_week') required int newUsersThisWeek,
@@ -82,7 +82,7 @@ class UserGrowth with _$UserGrowth {
 
 /// System Health Model
 @freezed
-class SystemHealth with _$SystemHealth {
+abstract class SystemHealth with _$SystemHealth {
   const factory SystemHealth({
     required String status, // healthy, warning, critical
     @JsonKey(name: 'cpu_usage') @Default(0.0) double cpuUsage,
@@ -98,7 +98,7 @@ class SystemHealth with _$SystemHealth {
 
 /// Storage Stats Model
 @freezed
-class StorageStats with _$StorageStats {
+abstract class StorageStats with _$StorageStats {
   const factory StorageStats({
     @JsonKey(name: 'total_storage') required double totalStorage,
     @JsonKey(name: 'used_storage') required double usedStorage,
@@ -111,7 +111,7 @@ class StorageStats with _$StorageStats {
 
 /// Admin User Details Model
 @freezed
-class AdminUserDetails with _$AdminUserDetails {
+abstract class AdminUserDetails with _$AdminUserDetails {
   const factory AdminUserDetails({
     required int id,
     required String name,
@@ -134,7 +134,7 @@ class AdminUserDetails with _$AdminUserDetails {
 
 /// Login History Model
 @freezed
-class LoginHistory with _$LoginHistory {
+abstract class LoginHistory with _$LoginHistory {
   const factory LoginHistory({
     required int id,
     @JsonKey(name: 'logged_in_at') required DateTime loggedInAt,
@@ -148,7 +148,7 @@ class LoginHistory with _$LoginHistory {
 
 /// Activity Log Model
 @freezed
-class ActivityLog with _$ActivityLog {
+abstract class ActivityLog with _$ActivityLog {
   const factory ActivityLog({
     required int id,
     required String action,
@@ -162,7 +162,7 @@ class ActivityLog with _$ActivityLog {
 
 /// Paginated Users Model
 @freezed
-class PaginatedUsers with _$PaginatedUsers {
+abstract class PaginatedUsers with _$PaginatedUsers {
   const factory PaginatedUsers({
     required List<AdminUser> users,
     required int total,
@@ -177,7 +177,7 @@ class PaginatedUsers with _$PaginatedUsers {
 
 /// Admin Activity Model
 @freezed
-class AdminActivity with _$AdminActivity {
+abstract class AdminActivity with _$AdminActivity {
   const factory AdminActivity({
     required int id,
     @JsonKey(name: 'activity_type') required String activityType,
@@ -193,7 +193,7 @@ class AdminActivity with _$AdminActivity {
 
 /// Audit Log Model
 @freezed
-class AuditLog with _$AuditLog {
+abstract class AuditLog with _$AuditLog {
   const factory AuditLog({
     required int id,
     required DateTime timestamp,

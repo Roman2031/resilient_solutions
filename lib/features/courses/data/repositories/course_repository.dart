@@ -8,7 +8,7 @@ part 'course_repository.g.dart';
 /// Course Repository
 /// Handles all API calls to WordPress LearnDash for courses, lessons, and progress
 @riverpod
-CourseRepository courseRepository(CourseRepositoryRef ref) {
+CourseRepository courseRepository(Ref ref) {
   final apiService = ref.watch(apiServiceProvider);
   return CourseRepository(apiService);
 }

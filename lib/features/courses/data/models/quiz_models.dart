@@ -7,7 +7,7 @@ part 'quiz_models.g.dart';
 
 /// Quiz Question Model
 @freezed
-class QuizQuestion with _$QuizQuestion {
+abstract class QuizQuestion with _$QuizQuestion {
   const factory QuizQuestion({
     required int id,
     required String question,
@@ -36,7 +36,7 @@ enum QuestionType {
 
 /// Quiz Result Model
 @freezed
-class QuizResult with _$QuizResult {
+abstract class QuizResult with _$QuizResult {
   const factory QuizResult({
     @JsonKey(name: 'quiz_id') required int quizId,
     required int score,
@@ -54,7 +54,7 @@ class QuizResult with _$QuizResult {
 
 /// Course Details Model (combines course, lessons, topics)
 @freezed
-class CourseDetails with _$CourseDetails {
+abstract class CourseDetails with _$CourseDetails {
   const factory CourseDetails({
     required Course course,
     @Default([]) List<Lesson> lessons,

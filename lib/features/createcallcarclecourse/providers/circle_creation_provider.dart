@@ -10,7 +10,7 @@ part 'circle_creation_provider.g.dart';
 
 /// Provider for available courses from LearnDash
 @riverpod
-Future<List<Course>> availableCourses(AvailableCoursesRef ref) async {
+Future<List<Course>> availableCourses(Ref ref) async {
   final repository = ref.watch(wordPressRepositoryProvider);
   
   try {

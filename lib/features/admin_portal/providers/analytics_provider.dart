@@ -8,7 +8,7 @@ part 'analytics_provider.g.dart';
 /// User Analytics Provider
 @riverpod
 Future<UserAnalytics> userAnalytics(
-  UserAnalyticsRef ref, {
+  Ref ref, {
   DateTime? startDate,
   DateTime? endDate,
 }) async {
@@ -27,7 +27,7 @@ Future<UserAnalytics> userAnalytics(
 
 /// Circle Analytics Provider
 @riverpod
-Future<CircleAnalytics> circleAnalytics(CircleAnalyticsRef ref) async {
+Future<CircleAnalytics> circleAnalytics(Ref ref) async {
   final repository = ref.watch(adminPortalRepositoryProvider);
   final permissions = ref.watch(userPermissionsProvider);
   
@@ -40,7 +40,7 @@ Future<CircleAnalytics> circleAnalytics(CircleAnalyticsRef ref) async {
 
 /// Learning Analytics Provider
 @riverpod
-Future<LearningAnalytics> learningAnalytics(LearningAnalyticsRef ref) async {
+Future<LearningAnalytics> learningAnalytics(Ref ref) async {
   final repository = ref.watch(adminPortalRepositoryProvider);
   final permissions = ref.watch(userPermissionsProvider);
   
@@ -53,7 +53,7 @@ Future<LearningAnalytics> learningAnalytics(LearningAnalyticsRef ref) async {
 
 /// Call Analytics Provider
 @riverpod
-Future<CallAnalytics> callAnalytics(CallAnalyticsRef ref) async {
+Future<CallAnalytics> callAnalytics(Ref ref) async {
   final repository = ref.watch(adminPortalRepositoryProvider);
   final permissions = ref.watch(userPermissionsProvider);
   
@@ -66,7 +66,7 @@ Future<CallAnalytics> callAnalytics(CallAnalyticsRef ref) async {
 
 /// Engagement Analytics Provider
 @riverpod
-Future<EngagementAnalytics> engagementAnalytics(EngagementAnalyticsRef ref) async {
+Future<EngagementAnalytics> engagementAnalytics(Ref ref) async {
   final repository = ref.watch(adminPortalRepositoryProvider);
   final permissions = ref.watch(userPermissionsProvider);
   

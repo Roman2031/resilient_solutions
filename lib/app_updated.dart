@@ -60,7 +60,7 @@ class _MyAppState extends ConsumerState<MyApp> {
 
   @override
   void dispose() {
-    _deepLinkService.dispose();
+    //_deepLinkService.dispose();
     super.dispose();
   }
 

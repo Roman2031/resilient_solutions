@@ -6,7 +6,7 @@ part 'call_circle.g.dart';
 /// Call Circle Model
 /// Represents a call circle from Laravel backend
 @freezed
-class CallCircle with _$CallCircle {
+abstract class CallCircle with _$CallCircle {
   const factory CallCircle({
     required int id,
     required String name,
@@ -30,7 +30,7 @@ class CallCircle with _$CallCircle {
 
 /// Call Circle Session Model
 @freezed
-class CallCircleSession with _$CallCircleSession {
+abstract class CallCircleSession with _$CallCircleSession {
   const factory CallCircleSession({
     required int id,
     @JsonKey(name: 'call_circle_id') required int callCircleId,
@@ -53,7 +53,7 @@ class CallCircleSession with _$CallCircleSession {
 
 /// Call Circle Member Model
 @freezed
-class CallCircleMember with _$CallCircleMember {
+abstract class CallCircleMember with _$CallCircleMember {
   const factory CallCircleMember({
     required int id,
     @JsonKey(name: 'call_circle_id') required int callCircleId,
@@ -72,7 +72,7 @@ class CallCircleMember with _$CallCircleMember {
 
 /// Attendance Model
 @freezed
-class Attendance with _$Attendance {
+abstract class Attendance with _$Attendance {
   const factory Attendance({
     required int id,
     @JsonKey(name: 'session_id') required int sessionId,

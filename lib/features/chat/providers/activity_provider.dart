@@ -8,7 +8,7 @@ part 'activity_provider.g.dart';
 /// Provider for fetching activity feed
 @riverpod
 Future<List<BBActivity>> activityFeed(
-  ActivityFeedRef ref, {
+  Ref ref, {
   int page = 1,
   int perPage = 20,
   String? type,

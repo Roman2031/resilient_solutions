@@ -10,7 +10,7 @@ part 'admin_portal_repository.g.dart';
 /// Implements all Admin Portal Laravel API endpoints
 /// Base URL: https://callcircle.resilentsolutions.com/api/v1/admin
 @riverpod
-AdminPortalRepository adminPortalRepository(AdminPortalRepositoryRef ref) {
+AdminPortalRepository adminPortalRepository(Ref ref) {
   final apiService = ref.watch(apiServiceProvider);
   return AdminPortalRepository(apiService);
 }

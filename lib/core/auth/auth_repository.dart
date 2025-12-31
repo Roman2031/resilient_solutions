@@ -169,7 +169,7 @@ class UnauthenticatedState extends AuthState {
 
 /// Provider for current user permissions
 @riverpod
-UserPermissions? userPermissions(UserPermissionsRef ref) {
+UserPermissions? userPermissions(Ref ref) {
   final authState = ref.watch(authRepositoryProvider);
   
   return authState.when(

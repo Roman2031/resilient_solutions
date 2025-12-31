@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:kindomcall/core/auth/models/user_role.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../auth/auth_repository.dart';
 import '../auth/permission_guard.dart';
@@ -8,7 +9,7 @@ part 'rbac_providers.g.dart';
 /// Provider for PermissionGuard
 /// Use this to check permissions and capabilities throughout the app
 @riverpod
-PermissionGuard? permissionGuard(PermissionGuardRef ref) {
+PermissionGuard? permissionGuard(Ref ref) {
   final permissions = ref.watch(userPermissionsProvider);
   
   if (permissions == null) return null;
@@ -18,7 +19,7 @@ PermissionGuard? permissionGuard(PermissionGuardRef ref) {
 
 /// Provider to check if user can access a specific feature
 @riverpod
-bool canAccessFeature(CanAccessFeatureRef ref, String feature) {
+bool canAccessFeature(Ref ref, String feature) {
   final guard = ref.watch(permissionGuardProvider);
   
   if (guard == null) return false;
@@ -29,7 +30,7 @@ bool canAccessFeature(CanAccessFeatureRef ref, String feature) {
 /// Provider to check if user can perform an action
 @riverpod
 bool canPerformAction(
-  CanPerformActionRef ref,
+  Ref ref,
   String action, {
   String? resource,
 }) {
@@ -42,7 +43,7 @@ bool canPerformAction(
 
 /// Provider for navigation items based on user role
 @riverpod
-List<NavigationItem> navigationItems(NavigationItemsRef ref) {
+List<NavigationItem> navigationItems(Ref ref) {
   final guard = ref.watch(permissionGuardProvider);
   
   if (guard == null) {
@@ -66,28 +67,28 @@ List<NavigationItem> navigationItems(NavigationItemsRef ref) {
 
 /// Provider to check if admin UI should be shown
 @riverpod
-bool shouldShowAdminUI(ShouldShowAdminUIRef ref) {
+bool shouldShowAdminUI(Ref ref) {
   final guard = ref.watch(permissionGuardProvider);
   return guard?.shouldShowAdminUI ?? false;
 }
 
 /// Provider to check if facilitator UI should be shown
 @riverpod
-bool shouldShowFacilitatorUI(ShouldShowFacilitatorUIRef ref) {
+bool shouldShowFacilitatorUI(Ref ref) {
   final guard = ref.watch(permissionGuardProvider);
   return guard?.shouldShowFacilitatorUI ?? false;
 }
 
 /// Provider to check if instructor UI should be shown
 @riverpod
-bool shouldShowInstructorUI(ShouldShowInstructorUIRef ref) {
+bool shouldShowInstructorUI(Ref ref) {
   final guard = ref.watch(permissionGuardProvider);
   return guard?.shouldShowInstructorUI ?? false;
 }
 
 /// Provider to get user's display name
 @riverpod
-String? userDisplayName(UserDisplayNameRef ref) {
+String? userDisplayName(Ref ref) {
   final authRepo = ref.watch(authRepositoryProvider);
   
   return authRepo.when(
@@ -102,7 +103,7 @@ String? userDisplayName(UserDisplayNameRef ref) {
 
 /// Provider to get user's email
 @riverpod
-String? userEmail(UserEmailRef ref) {
+String? userEmail(Ref ref) {
   final authRepo = ref.watch(authRepositoryProvider);
   
   return authRepo.when(
@@ -117,7 +118,7 @@ String? userEmail(UserEmailRef ref) {
 
 /// Provider to get user's role display names
 @riverpod
-List<String> userRoleDisplayNames(UserRoleDisplayNamesRef ref) {
+List<String> userRoleDisplayNames(Ref ref) {
   final permissions = ref.watch(userPermissionsProvider);
   
   if (permissions == null) return [];

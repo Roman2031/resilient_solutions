@@ -35,7 +35,7 @@ class ApiConfig {
 /// Handles all API requests to Laravel backend and WordPress LMS
 /// Automatically injects JWT tokens from Keycloak authentication
 @riverpod
-ApiService apiService(ApiServiceRef ref) {
+ApiService apiService(Ref ref) {
   final authService = KeycloakAuthService();
   return ApiService(authService);
 }

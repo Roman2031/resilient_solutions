@@ -9,7 +9,7 @@ part 'call_circle_repository.g.dart';
 /// Handles all API calls related to Call Circles
 /// Integrates with Laravel backend endpoints
 @riverpod
-CallCircleRepository callCircleRepository(CallCircleRepositoryRef ref) {
+CallCircleRepository callCircleRepository(Ref ref) {
   final apiService = ref.watch(apiServiceProvider);
   return CallCircleRepository(apiService);
 }

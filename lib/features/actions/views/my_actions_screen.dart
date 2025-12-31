@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../providers/actions_provider.dart';
 import '../widgets/action_item_card.dart';
 import '../widgets/actions_list_skeleton.dart';
@@ -10,6 +11,38 @@ import '../widgets/empty_actions_state.dart';
 import '../widgets/action_filter_chips.dart';
 import '../widgets/edit_action_dialog.dart';
 import '../../call_service/data/models/call_service_models.dart';
+
+/// Temporary StateNotifier that exposes the methods used in this screen.
+/// Replace this with the actual notifier/provider implementation from
+/// providers/actions_provider.dart when available.
+class ActionActionsNotifier {
+  final Ref ref;
+  ActionActionsNotifier(this.ref);
+
+  Future<void> deleteAction(dynamic id) async {
+    // TODO: implement deletion logic via repository or existing providers.
+  }
+
+  Future<void> markComplete(dynamic id) async {
+    // TODO: implement mark-complete logic via repository or existing providers.
+  }
+
+  Future<void> updateAction({
+    required dynamic actionId,
+    required String title,
+    required String description,
+    required DateTime? dueDate,
+    required String priority,
+    required String status,
+  }) async {
+    // TODO: implement update logic via repository or existing providers.
+  }
+}
+
+final actionActionsNotifierProvider =
+    Provider<ActionActionsNotifier>(
+  (ref) => ActionActionsNotifier(ref),
+);
 
 class MyActionsScreen extends ConsumerStatefulWidget {
   const MyActionsScreen({super.key});
@@ -71,7 +104,7 @@ class _MyActionsScreenState extends ConsumerState<MyActionsScreen> {
     if (confirmed == true) {
       try {
         await ref
-            .read(actionActionsNotifierProvider.notifier)
+            .read(actionActionsNotifierProvider)
             .deleteAction(action.id);
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -97,7 +130,7 @@ class _MyActionsScreenState extends ConsumerState<MyActionsScreen> {
   Future<void> _handleComplete(ActionItem action) async {
     try {
       await ref
-          .read(actionActionsNotifierProvider.notifier)
+          .read(actionActionsNotifierProvider)
           .markComplete(action.id);
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -127,7 +160,7 @@ class _MyActionsScreenState extends ConsumerState<MyActionsScreen> {
 
     if (result != null) {
       try {
-        await ref.read(actionActionsNotifierProvider.notifier).updateAction(
+        await ref.read(actionActionsNotifierProvider).updateAction(
               actionId: action.id,
               title: result['title'],
               description: result['description'],
